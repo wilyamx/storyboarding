@@ -52,6 +52,8 @@ final class SNGSignInViewModel {
             self.isLoading.value = false
             self.error.value = SNGErrorAlertType.somethingWentWrong.rawValue
             self.isLoggedIn.value = false
+            
+            logger.api(message: "Login invalid credentials!")
         }
         
     }

@@ -238,7 +238,9 @@ class SNGSignInViewController: SNGViewController, WSRStoryboarded {
                     
                     if self?.errorAlert == nil {
                         self?.errorAlert = SNGErrorAlertContainerView()
-                        self?.errorAlert?.showAlert(with: type, on: self!, withDelegate: nil)
+                        self?.errorAlert?.showAlert(with: type,
+                                                    on: self!,
+                                                    withDelegate: self)
                     }
                 }
             
