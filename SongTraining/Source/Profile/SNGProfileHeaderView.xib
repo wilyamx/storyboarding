@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SNGProfileHeaderView" customModule="SongTraining" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="85"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AvatarPlaceholder" translatesAutoresizingMaskIntoConstraints="NO" id="lgY-RW-WaS">
+                    <rect key="frame" x="20" y="22.666666666666671" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="00T-KR-9Yx"/>
+                        <constraint firstAttribute="width" constant="40" id="fe9-am-hHy"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KCD-Dr-03J">
+                    <rect key="frame" x="80" y="32.333333333333336" width="293" height="20.333333333333336"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="KCD-Dr-03J" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Oad-pU-FF6"/>
+                <constraint firstItem="KCD-Dr-03J" firstAttribute="leading" secondItem="lgY-RW-WaS" secondAttribute="trailing" constant="20" id="Ocz-LY-fG7"/>
+                <constraint firstItem="lgY-RW-WaS" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="eiE-3b-qSr"/>
+                <constraint firstAttribute="trailing" secondItem="KCD-Dr-03J" secondAttribute="trailing" constant="20" id="mXU-28-eva"/>
+                <constraint firstItem="lgY-RW-WaS" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="yBn-3J-oyP"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="imgvAvatar" destination="lgY-RW-WaS" id="Tmo-FQ-g4H"/>
+                <outlet property="lblUser" destination="KCD-Dr-03J" id="ttY-uY-xB4"/>
+            </connections>
+            <point key="canvasLocation" x="246.56488549618319" y="-168.66197183098592"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="AvatarPlaceholder" width="170" height="170"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

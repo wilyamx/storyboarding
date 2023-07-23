@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SNGErrorAlertView" customModule="SongTraining" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="395" height="327"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="Dxo-hb-cCj">
+                    <rect key="frame" x="20" y="20" width="355" height="287"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9ge-XM-LpE">
+                            <rect key="frame" x="0.0" y="0.0" width="355" height="50"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qEW-8S-BMZ">
+                                    <rect key="frame" x="152.66666666666666" y="0.0" width="50" height="50"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wifi.slash" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="RrY-EP-N1h">
+                                            <rect key="frame" x="10" y="10.33333333333333" width="30" height="27.666666666666671"/>
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemRedColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="RrY-EP-N1h" secondAttribute="bottom" constant="10" id="4tS-sG-iMm"/>
+                                        <constraint firstItem="RrY-EP-N1h" firstAttribute="leading" secondItem="qEW-8S-BMZ" secondAttribute="leading" constant="10" id="7EJ-FY-GEA"/>
+                                        <constraint firstItem="RrY-EP-N1h" firstAttribute="top" secondItem="qEW-8S-BMZ" secondAttribute="top" constant="10" id="dcr-N4-z3c"/>
+                                        <constraint firstAttribute="trailing" secondItem="RrY-EP-N1h" secondAttribute="trailing" constant="10" id="iEL-HL-ntq"/>
+                                        <constraint firstAttribute="width" constant="50" id="zHu-9k-gXQ"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemGrayColor"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="qEW-8S-BMZ" secondAttribute="bottom" id="TDT-71-lin"/>
+                                <constraint firstItem="qEW-8S-BMZ" firstAttribute="top" secondItem="9ge-XM-LpE" secondAttribute="top" id="gIv-J6-792"/>
+                                <constraint firstItem="qEW-8S-BMZ" firstAttribute="centerX" secondItem="9ge-XM-LpE" secondAttribute="centerX" id="rCF-0Q-5HS"/>
+                                <constraint firstAttribute="height" constant="50" id="v3m-Sx-ydG"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Something Went Wrong" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tob-BK-6MM">
+                            <rect key="frame" x="0.0" y="94.666666666666671" width="355" height="24"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sorry, an error occured while trying to sign in. Please try again later." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gp9-EL-BKp">
+                            <rect key="frame" x="0.0" y="163.66666666666666" width="355" height="28.666666666666657"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lyt-QU-gKg">
+                            <rect key="frame" x="0.0" y="237" width="355" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="cZD-DA-mMv"/>
+                            </constraints>
+                            <color key="tintColor" systemColor="systemRedColor"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="filled" title="Got it">
+                                <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </buttonConfiguration>
+                            <connections>
+                                <action selector="actnClose:" destination="iN0-l3-epB" eventType="touchUpInside" id="Zei-Sw-Rav"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemTealColor"/>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Dxo-hb-cCj" secondAttribute="bottom" constant="20" id="2BR-LZ-K31"/>
+                <constraint firstItem="Dxo-hb-cCj" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="TaN-mW-a98"/>
+                <constraint firstItem="Dxo-hb-cCj" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="i4T-7e-Znf"/>
+                <constraint firstAttribute="trailing" secondItem="Dxo-hb-cCj" secondAttribute="trailing" constant="20" id="u22-KS-EkM"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="btnClose" destination="Lyt-QU-gKg" id="9DP-kO-2ks"/>
+                <outlet property="iconBoxView" destination="qEW-8S-BMZ" id="9jD-yl-WIm"/>
+                <outlet property="iconContainerView" destination="9ge-XM-LpE" id="gPI-yL-kPn"/>
+                <outlet property="iconImageView" destination="RrY-EP-N1h" id="LpU-WP-MTT"/>
+                <outlet property="lblMessage" destination="Gp9-EL-BKp" id="7vC-aQ-Glf"/>
+                <outlet property="lblTitle" destination="Tob-BK-6MM" id="HRo-aM-Zzk"/>
+                <outlet property="stackView" destination="Dxo-hb-cCj" id="Q4V-w7-f5h"/>
+            </connections>
+            <point key="canvasLocation" x="44" y="-21"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="wifi.slash" catalog="system" width="128" height="101"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

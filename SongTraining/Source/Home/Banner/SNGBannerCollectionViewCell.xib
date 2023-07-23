@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="" id="mGl-OH-e5M" customClass="SNGBannerCollectionViewCell" customModule="SongTraining" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="363" height="230"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Tiz-UZ-sT5">
+                <rect key="frame" x="0.0" y="0.0" width="363" height="230"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="111" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CarouselBike1" translatesAutoresizingMaskIntoConstraints="NO" id="P0r-HR-s4Z">
+                        <rect key="frame" x="0.0" y="0.0" width="363" height="230"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lpp-Yc-NLP">
+                        <rect key="frame" x="20" y="70" width="200" height="52.666666666666657"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="200" id="BbY-uE-y0P"/>
+                        </constraints>
+                        <string key="text">Free yourself from
+the predictable</string>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fi5-9U-euz">
+                        <rect key="frame" x="20" y="127.66666666666667" width="250" height="31.333333333333329"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="250" id="VBO-NU-XSw"/>
+                        </constraints>
+                        <string key="text">Free yourself from
+the predictable</string>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Fi5-9U-euz" firstAttribute="leading" secondItem="Tiz-UZ-sT5" secondAttribute="leading" constant="20" id="1Mb-11-Xqc"/>
+                    <constraint firstAttribute="bottom" secondItem="P0r-HR-s4Z" secondAttribute="bottom" id="AjQ-2A-crX"/>
+                    <constraint firstItem="P0r-HR-s4Z" firstAttribute="leading" secondItem="Tiz-UZ-sT5" secondAttribute="leading" id="FWg-F2-3yf"/>
+                    <constraint firstItem="Lpp-Yc-NLP" firstAttribute="leading" secondItem="Tiz-UZ-sT5" secondAttribute="leading" constant="20" id="fsj-Jd-Im8"/>
+                    <constraint firstItem="Lpp-Yc-NLP" firstAttribute="top" secondItem="Tiz-UZ-sT5" secondAttribute="top" constant="70" id="ofT-Ol-Ybf"/>
+                    <constraint firstAttribute="trailing" secondItem="P0r-HR-s4Z" secondAttribute="trailing" id="qfr-XM-hgS"/>
+                    <constraint firstItem="Fi5-9U-euz" firstAttribute="top" secondItem="Lpp-Yc-NLP" secondAttribute="bottom" constant="5" id="s9N-4G-5mx"/>
+                    <constraint firstItem="P0r-HR-s4Z" firstAttribute="top" secondItem="Tiz-UZ-sT5" secondAttribute="top" id="tlV-cC-9fe"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="363" height="173"/>
+            <connections>
+                <outlet property="imgvBackground" destination="P0r-HR-s4Z" id="gJt-IN-wsT"/>
+                <outlet property="lblDescription" destination="Fi5-9U-euz" id="HaW-O2-wWn"/>
+                <outlet property="lblTitle" destination="Lpp-Yc-NLP" id="j1U-dG-iDZ"/>
+            </connections>
+            <point key="canvasLocation" x="492" y="-39"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="CarouselBike1" width="794.5" height="344"/>
+    </resources>
+</document>
