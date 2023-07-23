@@ -1,4 +1,4 @@
-# SONG FED Certification
+# Storyboarding Training
 
 ## XCode Project
 
@@ -13,10 +13,6 @@
 - KeychainSwift `20.0.0`
 - Reachability `master`
 - IQKeyboardManagerSwift `6.5.12`
-
-### Cocoapods
-
-- ?
 
 ## Feature
 
