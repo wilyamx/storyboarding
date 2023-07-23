@@ -13,35 +13,49 @@ extension UIImageView {
     func download(
         url: URL,
         toFile file: URL,
-        completion: @escaping (Error?) -> Void) {
+        completion: @escaping (Data?, Error?) -> Void) {
+            
+        logger.cache(message: "Downloading \(url)")
+        logger.cache(message: "Target Directory: \(file)")
+            
+//        if FileManager.default.fileExists(atPath: file.path) {
+//            logger.cache(message: "File exist in directory: \(file.path)")
+//
+//            let fileUrl = URL(filePath: "\(file.path)/CFNetworkDownload_W8AaIr.tmp")
+//            let data = try! Data(contentsOf: fileUrl)
+//            let image = UIImage(data: da)
+//            completion(data, nil)
+//            return
+//        }
             
         // Download the remote URL to a file
         let task = URLSession.shared.downloadTask(with: url) {
             (tempURL, response, error) in
+        
             // Early exit on error
             guard let tempURL = tempURL else {
-                completion(error)
+                completion(nil, error)
                 return
             }
-
+            logger.cache(message: "tempURL: \(tempURL)")
+            
             do {
                 // Remove any existing document at file
-                if FileManager.default.fileExists(atPath: file.path) {
-                    try FileManager.default.removeItem(at: file)
-                }
-
+            
                 // Copy the tempURL to file
-                try FileManager.default.copyItem(
-                    at: tempURL,
-                    to: file
-                )
+//                try FileManager.default.copyItem(
+//                    at: tempURL,
+//                    to: file
+//                )
 
-                completion(nil)
+                let data = try Data(contentsOf: tempURL)
+                completion(data, nil)
             }
 
             // Handle potential file system errors
             catch(let error) {
-                completion(error)
+                completion(nil, error)
+                logger.error(message: "\(error)")
             }
         }
 
@@ -65,40 +79,25 @@ extension UIImageView {
         }
         
         // Compute a path to the URL in the cache
-        let fileCachePath = FileManager.default.temporaryDirectory
-            .appendingPathComponent(
-                url.lastPathComponent,
-                isDirectory: false
-            )
-        
-        print("")
+        let fileManager = FileManager.default
+        let temporaryDirectory = fileManager.temporaryDirectory
+        let imagePath = temporaryDirectory.appendingPathComponent(
+            url.lastPathComponent,
+            isDirectory: false
+        )
+        let fileExist = fileManager.fileExists( atPath: urlText)
             
-//        if let image = UIImage(data: data) {
-//            completion(image, nil)
-//            WSRImageCache.shared.set(image, forKey: urlText)
-//
-//            logger.log(category: .cache, message: urlText)
-//            logger.cache(message: "Cache image \(urlText)")
-//        }
-//        else {
-//            completion(nil, WSRFileURLLoaderError.data)
-//            logger.error(message: "Corrupt data for \(urlText)")
-//        }
+        logger.info(message: "fileCachePath: \(imagePath), isExist: \(fileExist)")
             
+        if fileExist {
+            
+        }
+        else {
+            download(url: url, toFile: temporaryDirectory) { data, error in
+                completion(data, error)
+            }
+        }
         
-        // If the image exists in the cache,
-        // load the image from the cache and exit
-//        if let data = Data(contentsOf: url) {
-//            completion(data, nil)
-//            return
-//        }
-//
-//        // If the image does not exist in the cache,
-//        // download the image to the cache
-//        download(url: url, toFile: cachedFile) { (error) in
-//            let data = Data(contentsOfFile: cachedFile.path)
-//            completion(data, error)
-//        }
     }
     
     //----

@@ -50,9 +50,13 @@ class SNGNewsTableViewCell: UITableViewCell, WSRNibloadable {
                 placeholder: UIImage(named: "ImagePlaceholder")) { image, error in
                     
                 if error == nil, let image = image {
-                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                    DispatchQueue.main.async {
                         self.imgvNews.image = image
                     }
+                    
+//                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+//                        self.imgvNews.image = image
+//                    }
                 }
             }
         }

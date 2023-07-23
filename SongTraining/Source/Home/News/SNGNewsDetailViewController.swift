@@ -38,18 +38,15 @@ class SNGNewsDetailViewController: SNGViewController, WSRStoryboarded {
                 placeholder: UIImage(named: "PlaceholderNewsDetail")) { image, error in
 
                 if error == nil, let image = image {
-                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                    DispatchQueue.main.async {
                         self.imgvContent.image = image
                     }
+//                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+//                        self.imgvContent.image = image
+//                    }
                 }
             }
-            
-//            self.imgvContent.loadDataFromTemporaryDirectory(
-//                urlText: imageUrlText,
-//                placeholder: UIImage(named: "PlaceholderNewsDetail")) { data, error in
-//                    print("")
-//                }
-            
+        
         }
     }
 }
