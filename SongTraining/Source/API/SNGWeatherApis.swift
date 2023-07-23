@@ -9,7 +9,7 @@ import Foundation
 
 extension WSRApiService {
     func getWeather(from city: String) async throws -> SNGWeatherModel {
-        let urlString = "http://localhost:8080/api/weather"
+        let urlString = SNGApiEndpoints.getWeathers.stringWithDomainUrl()
         
         guard var url = URL(string: urlString) else {
             throw WSRApiError.badURL

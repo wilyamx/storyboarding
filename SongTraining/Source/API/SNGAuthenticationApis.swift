@@ -10,7 +10,7 @@ import Foundation
 extension WSRApiService {
     
     func login(username: String, password: String) async throws -> SNGLoginDetailsModel {
-        let urlString = "http://localhost:8080/api/auth/local"
+        let urlString = SNGApiEndpoints.authentication.stringWithDomainUrl()
         
         guard let url = URL(string: urlString) else {
             throw WSRApiError.badURL
@@ -61,8 +61,8 @@ extension WSRApiService {
     }
     
     func getUserDetails() async throws -> SNGUserModel {
-        let urlString = "http://localhost:8080/api/users/me"
-        
+        let urlString = SNGApiEndpoints.getUserDetails.stringWithDomainUrl()
+       
         guard let url = URL(string: urlString) else {
             throw WSRApiError.badURL
         }

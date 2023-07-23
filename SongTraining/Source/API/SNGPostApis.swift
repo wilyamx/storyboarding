@@ -9,8 +9,8 @@ import Foundation
 
 extension WSRApiService {
     func getPosts() async throws -> SNGPostDataModel {
-        let urlString = "http://localhost:8080/api/posts"
-        
+        let urlString = SNGApiEndpoints.getPosts.stringWithDomainUrl()
+       
         guard var url = URL(string: urlString) else {
             throw WSRApiError.badURL
         }

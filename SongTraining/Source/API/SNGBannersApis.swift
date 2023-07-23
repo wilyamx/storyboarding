@@ -9,7 +9,7 @@ import Foundation
 
 extension WSRApiService {
     func getBanners() async throws -> SNGBannerModel {
-        let urlString = "http://localhost:8080/api/banners"
+        let urlString = SNGApiEndpoints.getBanners.stringWithDomainUrl()
         
         guard var url = URL(string: urlString) else {
             throw WSRApiError.badURL
