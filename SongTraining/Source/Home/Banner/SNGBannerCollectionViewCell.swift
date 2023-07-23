@@ -23,5 +23,22 @@ class SNGBannerCollectionViewCell: UICollectionViewCell {
         
         lblTitle.text = model.attributes.title
         lblDescription.text = model.attributes.shortDescription
+        
+        guard let mediaData = model.attributes.desktopMedia?.data.first,
+              mediaData.id != 0 else {
+            return
+        }
+        
+        imgvBackground.loadData(
+            urlText: mediaData.attributes.url.stringWithDomainUrl(),
+            placeholder: UIImage(named: "PlaceholderNewsDetail")) {
+            image, error in
+            if error == nil {
+                DispatchQueue.main.async {
+                    self.imgvBackground.image = image
+                }
+            }
+        }
+        
     }
 }

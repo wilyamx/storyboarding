@@ -35,9 +35,9 @@ struct SNGBannerDataModel: Codable {
             ext: "",
             mime: "",
             path: "",
-            width: 1,
-            height: 1,
-            size: 1.0,
+            width: 0,
+            height: 0,
+            size: 0.0,
             url: "")
         let mediaFormats = SNGMediaFormatsModel(
             thumbnail: mediaFormat,
@@ -48,12 +48,12 @@ struct SNGBannerDataModel: Codable {
             name: "",
             alternativeText: "",
             caption: "",
-            width: 1,
-            height: 1,
+            width: 0,
+            height: 0,
             hash: "",
             ext: "",
             mime: "",
-            size: 1.0,
+            size: 0.0,
             url: "",
             previewUrl: "",
             provider: "",
@@ -61,7 +61,7 @@ struct SNGBannerDataModel: Codable {
             updatedAt: "",
             formats: mediaFormats)
         let media = SNGMediaDataModel(
-            id: 1,
+            id: 0,
             attributes: mediaAttributes)
         let bannerMedia = SNGBannerMediaModel(data: [media])
         let attributes = SNGBannerAttributes(tags: "",
