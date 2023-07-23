@@ -45,13 +45,13 @@ struct SNGMediaAttributesModel: Codable {
     let formats: SNGMediaFormatsModel
 }
 
-struct SNGMediaData: Codable {
+struct SNGMediaDataModel: Codable {
     let id: Int
     let attributes: SNGMediaAttributesModel
 }
 
 struct SNGMediaModel: Codable {
-    let data: [SNGMediaData]
+    let data: [SNGMediaDataModel]
 }
 
 

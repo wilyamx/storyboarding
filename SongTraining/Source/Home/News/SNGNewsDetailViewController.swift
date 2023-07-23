@@ -36,13 +36,19 @@ class SNGNewsDetailViewController: SNGViewController, WSRStoryboarded {
             self.imgvContent.loadData(
                 urlText: imageUrlText,
                 placeholder: UIImage(named: "PlaceholderNewsDetail")) { image, error in
-                    
+
                 if error == nil, let image = image {
                     DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
                         self.imgvContent.image = image
                     }
                 }
             }
+            
+//            self.imgvContent.loadDataFromTemporaryDirectory(
+//                urlText: imageUrlText,
+//                placeholder: UIImage(named: "PlaceholderNewsDetail")) { data, error in
+//                    print("")
+//                }
             
         }
     }

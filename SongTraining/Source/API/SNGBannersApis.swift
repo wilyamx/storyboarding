@@ -15,10 +15,10 @@ extension WSRApiService {
             throw WSRApiError.badURL
         }
         
-//        let queryItems = [
-//            URLQueryItem(name: "populate", value: "media")
-//        ]
-//        url.append(queryItems: queryItems)
+        let queryItems = [
+            URLQueryItem(name: "populate", value: "desktopMedia"),
+        ]
+        url.append(queryItems: queryItems)
         
         let session = URLSession(configuration: WSRApiService.getURLSessionConfiguration())
         var request = URLRequest(url: url)
