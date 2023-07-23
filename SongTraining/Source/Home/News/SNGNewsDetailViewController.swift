@@ -28,6 +28,22 @@ class SNGNewsDetailViewController: SNGViewController, WSRStoryboarded {
         self.lblDate.text = SNGLocalization.newsDateDisplay(from: attributes.publishedAt)
         self.lblTitle.text = attributes.title
         self.txtvContent.text = attributes.content
-        //self.imgvContent.image = UIIma
+        
+        if let mediaData = attributes.media?.data.first {
+            let imageFormat = mediaData.attributes.formats.medium
+            let imageUrlText = imageFormat.url.stringWithDomainUrl()
+            
+            self.imgvContent.loadData(
+                urlText: imageUrlText,
+                placeholder: UIImage(named: "PlaceholderNewsDetail")) { image, error in
+                    
+                if error == nil, let image = image {
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                        self.imgvContent.image = image
+                    }
+                }
+            }
+            
+        }
     }
 }

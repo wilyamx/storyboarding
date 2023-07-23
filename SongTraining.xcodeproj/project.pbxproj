@@ -96,6 +96,9 @@
 		60D7DC8E2A5C56A80075D513 /* SNGBannerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60D7DC8D2A5C56A80075D513 /* SNGBannerCollectionViewCell.swift */; };
 		60D7DC902A5C593C0075D513 /* SNGBannerCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 60D7DC8F2A5C593C0075D513 /* SNGBannerCollectionViewCell.xib */; };
 		60D7DC922A5D1ACA0075D513 /* SNGNewsHomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60D7DC912A5D1ACA0075D513 /* SNGNewsHomeTableViewCell.swift */; };
+		60DEA6A62A6CD3C300D0B844 /* UIImageView+WSR.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DEA6A52A6CD3C300D0B844 /* UIImageView+WSR.swift */; };
+		60DEA6A92A6CD7EF00D0B844 /* WSRImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DEA6A82A6CD7EF00D0B844 /* WSRImageCache.swift */; };
+		60DEA6AC2A6CE93100D0B844 /* String+SNG.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DEA6AB2A6CE93100D0B844 /* String+SNG.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -206,6 +209,9 @@
 		60D7DC8D2A5C56A80075D513 /* SNGBannerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNGBannerCollectionViewCell.swift; sourceTree = "<group>"; };
 		60D7DC8F2A5C593C0075D513 /* SNGBannerCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SNGBannerCollectionViewCell.xib; sourceTree = "<group>"; };
 		60D7DC912A5D1ACA0075D513 /* SNGNewsHomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNGNewsHomeTableViewCell.swift; sourceTree = "<group>"; };
+		60DEA6A52A6CD3C300D0B844 /* UIImageView+WSR.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+WSR.swift"; sourceTree = "<group>"; };
+		60DEA6A82A6CD7EF00D0B844 /* WSRImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSRImageCache.swift; sourceTree = "<group>"; };
+		60DEA6AB2A6CE93100D0B844 /* String+SNG.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+SNG.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -244,6 +250,7 @@
 				606F72F42A4C330B0011F798 /* Range+WSR.swift */,
 				6071E33F2A54245700D7C4A6 /* UIColor+WSR.swift */,
 				6071E35D2A5519EC00D7C4A6 /* UIView+WSR.swift */,
+				60DEA6A52A6CD3C300D0B844 /* UIImageView+WSR.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -353,6 +360,7 @@
 		606F72DA2A4BE6AE0011F798 /* WSR */ = {
 			isa = PBXGroup;
 			children = (
+				60DEA6A72A6CD7C800D0B844 /* Cache */,
 				6071E3412A5427FC00D7C4A6 /* Networking */,
 				604165562A52B76E0032016E /* Extensions */,
 				606F72FA2A4C572F0011F798 /* Coordinator */,
@@ -366,6 +374,7 @@
 		606F72DB2A4BEE730011F798 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				60DEA6AA2A6CE8FE00D0B844 /* Extensions */,
 				60CCF6432A59A6A4005BFC72 /* Network */,
 				60CCF63D2A57E12F005BFC72 /* Utilities */,
 				6071E3652A5543B500D7C4A6 /* Coordinators */,
@@ -564,6 +573,22 @@
 			path = Network;
 			sourceTree = "<group>";
 		};
+		60DEA6A72A6CD7C800D0B844 /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+				60DEA6A82A6CD7EF00D0B844 /* WSRImageCache.swift */,
+			);
+			path = Cache;
+			sourceTree = "<group>";
+		};
+		60DEA6AA2A6CE8FE00D0B844 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				60DEA6AB2A6CE93100D0B844 /* String+SNG.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -725,6 +750,7 @@
 				60B4D2022A56DB6700AC7CB9 /* SNGNewsViewModel.swift in Sources */,
 				6071E33C2A53CE4900D7C4A6 /* SNGWeatherViewController.swift in Sources */,
 				606F72952A4BD89A0011F798 /* AppDelegate.swift in Sources */,
+				60DEA6A92A6CD7EF00D0B844 /* WSRImageCache.swift in Sources */,
 				6071E3502A542DEE00D7C4A6 /* SNGUserModel.swift in Sources */,
 				6071E3642A55240300D7C4A6 /* SNGProfileDetailsViewController.swift in Sources */,
 				60D7DC8E2A5C56A80075D513 /* SNGBannerCollectionViewCell.swift in Sources */,
@@ -732,10 +758,12 @@
 				60D7DC8C2A5C3E2A0075D513 /* SNGNewsMinimalViewController.swift in Sources */,
 				6071E3522A543EC800D7C4A6 /* SNGWeatherViewModel.swift in Sources */,
 				606F72FC2A4C5A2A0011F798 /* SNGCoordinator.swift in Sources */,
+				60DEA6AC2A6CE93100D0B844 /* String+SNG.swift in Sources */,
 				604A001E2A59D07C00040269 /* SNGCarouselBannerViewModel.swift in Sources */,
 				604A00242A59D4AA00040269 /* SNGMetaModel.swift in Sources */,
 				6071E34A2A54299500D7C4A6 /* SNGViewModel.swift in Sources */,
 				60B4D1E82A55CF5100AC7CB9 /* SNGProfileDetailsView.swift in Sources */,
+				60DEA6A62A6CD3C300D0B844 /* UIImageView+WSR.swift in Sources */,
 				606F72F72A4C56740011F798 /* WSRCoordinatorProtocol.swift in Sources */,
 				60B4D2042A56DBDA00AC7CB9 /* SNGPostApis.swift in Sources */,
 				606F72CF2A4BE48F0011F798 /* SNGFavoritesViewController.swift in Sources */,

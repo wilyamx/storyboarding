@@ -40,6 +40,22 @@ class SNGNewsTableViewCell: UITableViewCell, WSRNibloadable {
     public func updateDisplay(model: SNGPostModel) {
         lblTitle.text = model.attributes.title
         lblCalendar.text = SNGLocalization.newsDateDisplay(from: model.attributes.publishedAt)
+        
+        if let mediaData = model.attributes.media?.data.first {
+            let imageFormat = mediaData.attributes.formats.small
+            let imageUrlText = imageFormat.url.stringWithDomainUrl()
+            
+            self.imgvNews.loadData(
+                urlText: imageUrlText,
+                placeholder: UIImage(named: "ImagePlaceholder")) { image, error in
+                    
+                if error == nil, let image = image {
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                        self.imgvNews.image = image
+                    }
+                }
+            }
+        }
     }
 }
 
