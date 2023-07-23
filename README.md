@@ -2,7 +2,7 @@
 
 ## XCode Project
 
-- **IDE:** `XCode 14.3 for iOS 16.4`
+- **IDE:** `XCode 14.3.1 for iOS 16.4`
 - **Language:** `Swift 5`
 - **Interface:** `Storyboard`
 
@@ -21,6 +21,7 @@
 - API Integration
 - Logger
 - Coordinator Design Pattern for navigation
+- Image Caching
 
 ## Localhost
 
