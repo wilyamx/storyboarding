@@ -33,7 +33,7 @@ final class SNGWeatherViewModel {
             weatherDetails.value = SNGWeatherDisplayModel(
                 description: details.data.descriptions.description,
                 temperature: Int(details.data.temperature),
-                image: details.data.descriptions.description.capitalized.replacingOccurrences(of: " ", with: "")
+                image: details.data.descriptions.main.capitalized.replacingOccurrences(of: " ", with: "")
             )
         }
         catch(let error) {
