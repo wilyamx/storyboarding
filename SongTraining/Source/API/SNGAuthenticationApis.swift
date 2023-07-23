@@ -9,6 +9,8 @@ import Foundation
 
 extension WSRApiService {
     
+    // FIXME: JSONError when credentials are incorrect
+    
     func login(username: String, password: String) async throws -> SNGLoginDetailsModel {
         let urlString = SNGApiEndpoints.authentication.stringWithDomainUrl()
         

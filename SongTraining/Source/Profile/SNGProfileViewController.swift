@@ -129,6 +129,7 @@ extension SNGProfileViewController: UITableViewDelegate {
             self.viewModel.logout()
         }
         else if data.label == "Sign in" {
+            self.viewModel.clearPersistentData()
             self.coordinator?.switchToSignIn()
         }
         else if data.label == "Sign up" {

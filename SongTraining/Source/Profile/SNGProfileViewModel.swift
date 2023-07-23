@@ -39,13 +39,21 @@ final class SNGProfileViewModel {
         self.isLoading.value = true
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) { [weak self] in
-            self?.keychain.removeItemFromKeychain(for: SNGKeychainAccessKey.token)
+            self?.clearPersistentData()
             
             self?.isLoading.value = false
             self?.error.value = ""
             self?.isLoggedOut.value = true
         }
         
+    }
+    
+    func clearPersistentData() {
+        self.keychain.removeItemFromKeychain(for: SNGKeychainAccessKey.token)
+        
+        SNGUserDefaultsKey.allCases.forEach { key in
+            UserDefaults.standard.removeObject(forKey: key.rawValue)
+        }
     }
     
     func isAuthenticatedUser() -> Bool {
