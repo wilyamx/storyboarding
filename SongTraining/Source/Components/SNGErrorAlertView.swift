@@ -78,7 +78,7 @@ class SNGErrorAlertContainerView: UIView {
     // MARK: - Public Method
     
     public func showAlert(with type: SNGErrorAlertType,
-                   on viewController: UIViewController,
+                          on viewController: UIViewController,
                           withDelegate delegate: SNGErrorAlertViewDelegate?,
                           _ aTabBarItemDisplay: Bool? = false) {
         
@@ -95,7 +95,7 @@ class SNGErrorAlertContainerView: UIView {
         view.initialize(with: type)
         view.closeAction = {
             self.close()
-            self.delegate?.didClose(alert: view)
+            self.delegate?.didClose(alert: view, type: type)
         }
         
         let padding = 20.0
@@ -127,7 +127,7 @@ class SNGErrorAlertContainerView: UIView {
 }
 
 protocol SNGErrorAlertViewDelegate: AnyObject {
-    func didClose(alert: SNGErrorAlertView)
+    func didClose(alert: SNGErrorAlertView, type: SNGErrorAlertType)
 }
 
 class SNGErrorAlertView: UIView, WSRNibloadable {

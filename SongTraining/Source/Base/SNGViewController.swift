@@ -108,7 +108,19 @@ extension UIViewController {
 }
 
 extension SNGViewController: SNGErrorAlertViewDelegate {
-    func didClose(alert: SNGErrorAlertView) {
+    func didClose(alert: SNGErrorAlertView, type: SNGErrorAlertType) {
+        if type == SNGErrorAlertType.noInternetConnection {
+            guard let settingsUrl = URL(string: UIApplication.openSettingsURLString) else {
+                return
+            }
+            
+            if UIApplication.shared.canOpenURL(settingsUrl) {
+                UIApplication.shared.open(settingsUrl,
+                                          completionHandler: { (success) in
+                    logger.info(message: "Settings opened: \(success)")
+                })
+            }
+        }
         self.errorAlert = nil
         logger.info(message: "Error alert message closed!")
     }
