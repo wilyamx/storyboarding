@@ -95,6 +95,14 @@ class SNGCarouselBannerViewController: SNGViewController {
         }
     }
     
+    // MARK: - Public Methods
+    
+    public func refresh() {
+        Task {
+            await self.viewModel.getBanners()
+        }
+    }
+    
     // MARK: - Actions
     
     @objc func changeImage() {

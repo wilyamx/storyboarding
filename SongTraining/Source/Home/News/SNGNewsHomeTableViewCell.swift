@@ -96,6 +96,14 @@ class SNGNewsHomeTableViewCell: UITableViewCell {
         }
         
     }
+    
+    // MARK: - Public Methods
+    
+    public func refresh() {
+        Task {
+            await self.viewModel.getPosts()
+        }
+    }
 }
 
 extension SNGNewsHomeTableViewCell: UITableViewDataSource {

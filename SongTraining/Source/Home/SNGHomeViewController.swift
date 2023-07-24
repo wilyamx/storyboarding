@@ -16,6 +16,7 @@ class SNGHomeViewController: UITableViewController, SNGTabBarContent {
     let NEWS_HEADER_HEIGHT = 50.0
     
     private var selectedNewsDetail: SNGPostAttributes?
+    private var bannerVC: SNGCarouselBannerViewController?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,11 +44,11 @@ class SNGHomeViewController: UITableViewController, SNGTabBarContent {
         
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         
-        let bannerVC  = storyboard.instantiateViewController(withIdentifier: "SNGCarouselBannerViewController") as! SNGCarouselBannerViewController
-        bannerVC.view.frame = bannerCell.bounds
-        bannerVC.view.translatesAutoresizingMaskIntoConstraints = true
-        bannerVC.view.autoresizingMask = [.flexibleHeight, .flexibleWidth]
-        bannerCell.addSubview(bannerVC.view)
+        bannerVC  = storyboard.instantiateViewController(withIdentifier: "SNGCarouselBannerViewController") as? SNGCarouselBannerViewController
+        bannerVC?.view.frame = bannerCell.bounds
+        bannerVC?.view.translatesAutoresizingMaskIntoConstraints = true
+        bannerVC?.view.autoresizingMask = [.flexibleHeight, .flexibleWidth]
+        bannerCell.addSubview((bannerVC?.view)!)
         
         //----
         
@@ -71,7 +72,10 @@ class SNGHomeViewController: UITableViewController, SNGTabBarContent {
     // MARK: - Public Methods
     
     public func refresh() {
-        logger.info(message: "Refresh")
+        logger.info(message: "Refreshing contents...")
+        
+        bannerVC?.refresh()
+        newsCell.refresh()
     }
     
     // MARK: - Navigation
