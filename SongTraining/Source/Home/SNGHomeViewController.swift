@@ -68,6 +68,12 @@ class SNGHomeViewController: UITableViewController, SNGTabBarContent {
         self.sngNavigationBarWithLogo(withLineSeparator: false)
     }
     
+    // MARK: - Public Methods
+    
+    public func refresh() {
+        logger.info(message: "Refresh")
+    }
+    
     // MARK: - Navigation
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

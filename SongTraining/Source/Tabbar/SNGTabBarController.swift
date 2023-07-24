@@ -36,23 +36,32 @@ enum SNGScreenTab: String {
             let tabBarItem =  UITabBarItem(title: "Home",
                                 image: UIImage(systemName: "house"),
                                 selectedImage: UIImage(systemName: "house.fill"))
+            tabBarItem.tag = 0
             return tabBarItem
         case .products:
-            return UITabBarItem(title: "Explore",
+            let tabBarItem = UITabBarItem(title: "Explore",
                                 image: UIImage(systemName: "magnifyingglass"),
                                 selectedImage: UIImage(systemName: "magnifyingglass"))
+            tabBarItem.tag = 1
+            return tabBarItem
         case .favorites:
-            return UITabBarItem(title: "Favorites",
+            let tabBarItem = UITabBarItem(title: "Favorites",
                                 image: UIImage(systemName: "heart"),
                                 selectedImage: UIImage(systemName: "heart.fill"))
+            tabBarItem.tag = 2
+            return tabBarItem
         case .cart:
-            return UITabBarItem(title: "Cart",
+            let tabBarItem = UITabBarItem(title: "Cart",
                                 image: UIImage(systemName: "cart"),
                                 selectedImage: UIImage(systemName: "cart.fill"))
+            tabBarItem.tag = 3
+            return tabBarItem
         case .profile:
-            return UITabBarItem(title: "Profile",
+            let tabBarItem = UITabBarItem(title: "Profile",
                                 image: UIImage(systemName: "person.circle"),
                                 selectedImage: UIImage(systemName: "person.circle.fill"))
+            tabBarItem.tag = 4
+            return tabBarItem
         }
     }
     
@@ -60,6 +69,8 @@ enum SNGScreenTab: String {
 
 class SNGTabBarController: UITabBarController {
 
+    private var switchedToHome: Bool = false
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -77,16 +88,6 @@ class SNGTabBarController: UITabBarController {
         }
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
     static func tabController(forAuthenticatedUser: Bool? = false) -> UITabBarController {
         let storyboard = UIStoryboard(name: "Main", bundle: .main)
         
@@ -103,8 +104,7 @@ class SNGTabBarController: UITabBarController {
         favoritesVC.tabBarItem = SNGScreenTab.favorites.getTabBarItem()
         cartVC.tabBarItem = SNGScreenTab.cart.getTabBarItem()
         profileVC.tabBarItem = SNGScreenTab.profile.getTabBarItem()
-        
-        
+    
         var viewControllers = [homeVC, productsVC, profileVC]
         if let forAuthenticatedUser = forAuthenticatedUser, forAuthenticatedUser {
             viewControllers = [homeVC, productsVC, favoritesVC, cartVC, profileVC]
@@ -112,5 +112,26 @@ class SNGTabBarController: UITabBarController {
         
         tabbar.viewControllers = viewControllers
         return tabbar
+    }
+    
+    override func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
+        logger.info(message: "Switched Tab: \(item.title ?? "")")
+        
+        // Home TabItem
+        // Refresh will happened when tabitem already selected
+        if item.tag == 0 {
+            if let navigationVC = self.viewControllers?.first as? UINavigationController,
+               let homeVC = navigationVC.topViewController as? SNGHomeViewController {
+                if self.switchedToHome {
+                    homeVC.refresh()
+                }
+                else {
+                    self.switchedToHome = true
+                }
+            }
+        }
+        else {
+            self.switchedToHome = false
+        }
     }
 }
