@@ -1,4 +1,5 @@
 # Storyboarding Training
+### iOS Developer: William S. Reña
 
 ## XCode Project
 
@@ -23,7 +24,7 @@
 - Coordinator Design Pattern for navigation
 - Image Caching
 
-## Localhost
+## API (Localhost)
 
 	digital-products-cms % nvm install lts/gallium
 	Now using node v16.20.1 (npm v8.19.4)
