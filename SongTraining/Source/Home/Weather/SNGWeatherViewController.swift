@@ -72,7 +72,6 @@ class SNGWeatherViewController: SNGViewController {
         self.lblWeather.textColor = .white
         self.lblWeather.font = UIFont.preferredFont(forTextStyle: .headline)
         
-        
         self.btnCity.imageView?.translatesAutoresizingMaskIntoConstraints = false
         self.btnCity.imageView?.centerYAnchor.constraint(equalTo: self.btnCity.centerYAnchor, constant: 0).isActive = true
         self.btnCity.imageView?.trailingAnchor.constraint(equalTo: self.btnCity.leadingAnchor, constant: self.btnCity.frame.size.width - 10.0).isActive = true
@@ -169,6 +168,17 @@ class SNGWeatherViewController: SNGViewController {
     private func initializeData() {
         Task {
             await self.viewModel.getWeather(from: self.viewModel.defaultCity)
+        }
+    }
+    
+    // MARK: - Public Methods
+    
+    public func refresh() {
+        let selectedCity = self.btnCity.titleLabel?.text ?? viewModel.defaultCity
+        
+        self.updateSelectedCity(city: selectedCity.uppercased())
+        Task {
+            await self.viewModel.getWeather(from: selectedCity)
         }
     }
 }

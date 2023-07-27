@@ -17,6 +17,7 @@ class SNGHomeViewController: UITableViewController, SNGTabBarContent {
     
     private var selectedNewsDetail: SNGPostAttributes?
     private var bannerVC: SNGCarouselBannerViewController?
+    private var weatherVC: SNGWeatherViewController?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,14 +49,19 @@ class SNGHomeViewController: UITableViewController, SNGTabBarContent {
         bannerVC?.view.frame = bannerCell.bounds
         bannerVC?.view.translatesAutoresizingMaskIntoConstraints = true
         bannerVC?.view.autoresizingMask = [.flexibleHeight, .flexibleWidth]
-        bannerCell.addSubview((bannerVC?.view)!)
+        
+        if let bannerView = bannerVC?.view {
+            bannerCell.addSubview(bannerView)
+        }
         
         //----
         
-        let weatherVC  = storyboard.instantiateViewController(withIdentifier: "SNGWeatherViewController") as! SNGWeatherViewController
-        weatherVC.view.frame = weatherCell.bounds
-
-        weatherCell.addSubview(weatherVC.view)
+        weatherVC  = storyboard.instantiateViewController(withIdentifier: "SNGWeatherViewController") as? SNGWeatherViewController
+        weatherVC?.view.frame = weatherCell.bounds
+        
+        if let weatherView = weatherVC?.view {
+            weatherCell.addSubview(weatherView)
+        }
         
         //----
         
@@ -75,6 +81,7 @@ class SNGHomeViewController: UITableViewController, SNGTabBarContent {
         logger.info(message: "Refreshing contents...")
         
         bannerVC?.refresh()
+        weatherVC?.refresh()
         newsCell.refresh()
     }
     
