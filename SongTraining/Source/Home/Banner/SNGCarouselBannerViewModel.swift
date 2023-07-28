@@ -36,11 +36,18 @@ final class SNGCarouselBannerViewModel {
         }
         catch(let error) {
             if let error = error as? WSRApiError {
-                logger.error(message: error.localizedDescription)
+                logger.api(message: error.description)
+                
+                if error.description == WSRApiError.badRequest.description {
+                    self.isLoading.value = false
+                    self.error.value = SNGErrorAlertType.badRequest.rawValue
+                }
+                else {
+                    self.isLoading.value = false
+                    self.error.value = SNGErrorAlertType.somethingWentWrong.rawValue
+                }
             }
             
-            self.isLoading.value = false
-            self.error.value = SNGErrorAlertType.somethingWentWrong.rawValue
         }
     }
 }
