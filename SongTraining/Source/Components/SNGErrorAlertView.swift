@@ -11,12 +11,11 @@ enum SNGErrorAlertType: String {
     case somethingWentWrong
     case connectionTimedOut
     case noInternetConnection
+    case badRequest
     
     func getIcon() -> UIImage {
         switch self {
-        case .somethingWentWrong:
-            return UIImage(systemName: "exclamationmark")!
-        case .connectionTimedOut:
+        case .somethingWentWrong, .badRequest, .connectionTimedOut:
             return UIImage(systemName: "exclamationmark")!
         case .noInternetConnection:
             return UIImage(systemName: "wifi.slash")!
@@ -25,20 +24,16 @@ enum SNGErrorAlertType: String {
     
     func getTitle() -> String {
         switch self {
-        case .somethingWentWrong:
-            return "Something Went Wrong"
-        case .connectionTimedOut:
-            return "Connection Timed Out"
-        case .noInternetConnection:
-            return "No Internet Connection"
+        case .somethingWentWrong: return "Something Went Wrong"
+        case .badRequest: return "Bad Request"
+        case .connectionTimedOut: return "Connection Timed Out"
+        case .noInternetConnection: return "No Internet Connection"
         }
     }
     
     func getMessage() -> String {
         switch self {
-        case .somethingWentWrong:
-            return "Sorry, an error occured while trying to sign in. Please try again later."
-        case .connectionTimedOut:
+        case .somethingWentWrong, .badRequest, .connectionTimedOut:
             return "Sorry, an error occured while trying to sign in. Please try again later."
         case .noInternetConnection:
             return "Please try again when your connection is available."
@@ -47,11 +42,7 @@ enum SNGErrorAlertType: String {
     
     func getActionButtonText() -> String {
         switch self {
-        case .somethingWentWrong:
-            return "Got it"
-        case .connectionTimedOut:
-            return "Got it"
-        case .noInternetConnection:
+        case .somethingWentWrong, .badRequest, .connectionTimedOut, .noInternetConnection:
             return "Got it"
         }
     }

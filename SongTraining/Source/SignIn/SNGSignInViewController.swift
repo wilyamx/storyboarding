@@ -236,7 +236,7 @@ class SNGSignInViewController: SNGViewController, WSRStoryboarded {
                 if let type = SNGErrorAlertType(rawValue: value) {
                     self?.showUserInputStatusErrorMessage()
                     
-                    if self?.errorAlert == nil {
+                    if self?.errorAlert == nil, type != .badRequest {
                         self?.errorAlert = SNGErrorAlertContainerView()
                         self?.errorAlert?.showAlert(with: type,
                                                     on: self!,

@@ -33,7 +33,7 @@ enum WSRApiError: Error, CustomStringConvertible {
     var description: String {
         //info for debugging
         switch self {
-        case .serverError, .unknown: return "Unknown Error"
+        case .serverError: return "Server Error"
         case .badURL: return "Invalid URL"
         case .url(let error):
             return error?.localizedDescription ?? "URL Session Error"
@@ -41,8 +41,8 @@ enum WSRApiError: Error, CustomStringConvertible {
             return "Parsing error \(error?.localizedDescription ?? "")"
         case .badResponse(statusCode: let statusCode):
             return "Bad response with status code \(statusCode)"
-        case .badRequest:
-            return "Client error"
+        case .badRequest: return "Client error"
+        case .unknown: return "Unknown Error"
         }
     }
 }

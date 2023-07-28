@@ -46,14 +46,19 @@ final class SNGSignInViewModel {
         }
         catch(let error) {
             if let error = error as? WSRApiError {
-                logger.error(message: error.localizedDescription)
+                logger.api(message: error.description)
+                
+                if error.description == WSRApiError.badRequest.description {
+                    self.isLoading.value = false
+                    self.error.value = SNGErrorAlertType.badRequest.rawValue
+                    self.isLoggedIn.value = false
+                }
+                else {
+                    self.isLoading.value = false
+                    self.error.value = SNGErrorAlertType.somethingWentWrong.rawValue
+                    self.isLoggedIn.value = false
+                }
             }
-            
-            self.isLoading.value = false
-            self.error.value = SNGErrorAlertType.somethingWentWrong.rawValue
-            self.isLoggedIn.value = false
-            
-            logger.api(message: "Login invalid credentials!")
         }
         
     }
