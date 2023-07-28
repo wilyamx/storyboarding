@@ -12,10 +12,11 @@ enum SNGErrorAlertType: String {
     case connectionTimedOut
     case noInternetConnection
     case badRequest
+    case domain
     
     func getIcon() -> UIImage {
         switch self {
-        case .somethingWentWrong, .badRequest, .connectionTimedOut:
+        case .somethingWentWrong, .badRequest, .connectionTimedOut, .domain:
             return UIImage(systemName: "exclamationmark")!
         case .noInternetConnection:
             return UIImage(systemName: "wifi.slash")!
@@ -28,6 +29,7 @@ enum SNGErrorAlertType: String {
         case .badRequest: return "Bad Request"
         case .connectionTimedOut: return "Connection Timed Out"
         case .noInternetConnection: return "No Internet Connection"
+        case .domain: return "Domain Connection"
         }
     }
     
@@ -37,12 +39,14 @@ enum SNGErrorAlertType: String {
             return "Sorry, an error occured while trying to sign in. Please try again later."
         case .noInternetConnection:
             return "Please try again when your connection is available."
+        case .domain:
+            return "Could not connect to the server."
         }
     }
     
     func getActionButtonText() -> String {
         switch self {
-        case .somethingWentWrong, .badRequest, .connectionTimedOut, .noInternetConnection:
+        case .somethingWentWrong, .badRequest, .connectionTimedOut, .noInternetConnection, .domain:
             return "Got it"
         }
     }

@@ -59,6 +59,12 @@ final class SNGSignInViewModel {
                     self.isLoggedIn.value = false
                 }
             }
+            else {
+                logger.api(message: "\(error.localizedDescription)")
+                
+                self.isLoading.value = false
+                self.error.value = SNGErrorAlertType.domain.rawValue
+            }
         }
         
     }

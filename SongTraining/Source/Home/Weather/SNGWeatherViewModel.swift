@@ -49,6 +49,12 @@ final class SNGWeatherViewModel {
                     self.error.value = SNGErrorAlertType.somethingWentWrong.rawValue
                 }
             }
+            else {
+                logger.api(message: "\(error.localizedDescription)")
+                
+                self.isLoading.value = false
+                self.error.value = SNGErrorAlertType.domain.rawValue
+            }
         }
     }
     
