@@ -24,6 +24,8 @@ class SNGSignInViewController: SNGViewController, WSRStoryboarded {
     
     @IBAction func actnSignIn(_ sender: UIButton) {
         self.inactiveUserInputs()
+        self.updateUserInputs()
+        self.inactiveUserInputs()
         
         Task {
             await self.viewModel.login(email: self.viewEmail.getInputText(),
@@ -210,6 +212,11 @@ class SNGSignInViewController: SNGViewController, WSRStoryboarded {
         if self.viewPassword.isActive {
             self.viewPassword.isActive = false
         }
+    }
+    
+    private func updateUserInputs() {
+        self.viewEmail.updateTextInput(text: self.viewEmail.getInputText())
+        self.viewPassword.updateTextInput(text: self.viewPassword.getInputText())
     }
     
     private func showUserInputStatusErrorMessage() {

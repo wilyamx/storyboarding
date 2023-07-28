@@ -35,12 +35,12 @@ enum SNGErrorAlertType: String {
     
     func getMessage() -> String {
         switch self {
-        case .somethingWentWrong, .badRequest, .connectionTimedOut:
-            return "Sorry, an error occured while trying to sign in. Please try again later."
-        case .noInternetConnection:
-            return "Please try again when your connection is available."
-        case .domain:
-            return "Could not connect to the server."
+        case .somethingWentWrong: return "Sorry, an error occured while trying to sign in.\nPlease try again later."
+        case .connectionTimedOut: return "Sorry, connection timeout.\nPlease try again later."
+        case .noInternetConnection: return "Please try again when your connection is available."
+            
+        case .badRequest: return "Sorry, bad request."
+        case .domain: return "Could not connect to the server."
         }
     }
     

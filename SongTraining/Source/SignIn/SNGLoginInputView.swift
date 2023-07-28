@@ -142,20 +142,6 @@ class SNGLoginInputView: UIView, WSRNibloadable {
         self.txtInput.layer.borderColor = UIColor.clear.cgColor
     }
     
-    private func updateTextInput(text: String) {
-        guard text.count > 0 else { return }
-        
-        if let isValidUserInput = self.inputValidation {
-            let isValid = isValidUserInput(text)
-            self.isValidUserInput = isValid
-            self.updateErrorDisplay(isValidInput: isValid)
-            
-            self.txtInput.layer.borderColor = isValid ? UIColor.sngSuccessColor.cgColor : UIColor.sngErrorColor.cgColor
-            self.txtInput.layer.borderWidth = 1.0
-            self.txtInput.layer.cornerRadius = 5.0
-        }
-    }
-    
     private func displayErrorIcon(visible: Bool) {
         if visible {
             self.textInputRightConstraint.constant = self.DEFAULT_INPUT_RIGHT_DISTANCE_2
@@ -200,6 +186,20 @@ class SNGLoginInputView: UIView, WSRNibloadable {
     }
     
     // MARK: - Public Methods
+    
+    public func updateTextInput(text: String) {
+        guard text.count > 0 else { return }
+        
+        if let isValidUserInput = self.inputValidation {
+            let isValid = isValidUserInput(text)
+            self.isValidUserInput = isValid
+            self.updateErrorDisplay(isValidInput: isValid)
+            
+            self.txtInput.layer.borderColor = isValid ? UIColor.sngSuccessColor.cgColor : UIColor.sngErrorColor.cgColor
+            self.txtInput.layer.borderWidth = 1.0
+            self.txtInput.layer.cornerRadius = 5.0
+        }
+    }
     
     public func getInputText() -> String {
         if let text = self.txtInput.text {

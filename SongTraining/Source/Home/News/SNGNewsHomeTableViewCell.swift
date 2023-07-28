@@ -86,7 +86,7 @@ class SNGNewsHomeTableViewCell: UITableViewCell {
                     
                     if let type = SNGErrorAlertType(rawValue: value),
                        type != .badRequest {
-                        self?.noResultsView.errorReason(reason: type.getMessage())
+                        self?.noResultsView.errorWithTryAgain(reason: type.getMessage())
                     }
                 }
             }
