@@ -234,13 +234,14 @@ class SNGSignInViewController: SNGViewController, WSRStoryboarded {
         self.viewModel.error.bind { [weak self] value in
             DispatchQueue.main.async {
                 if let type = SNGErrorAlertType(rawValue: value) {
-                    self?.showUserInputStatusErrorMessage()
-                    
                     if self?.errorAlert == nil, type != .badRequest {
                         self?.errorAlert = SNGErrorAlertContainerView()
                         self?.errorAlert?.showAlert(with: type,
                                                     on: self!,
                                                     withDelegate: self)
+                    }
+                    else {
+                        self?.showUserInputStatusErrorMessage()
                     }
                 }
             
