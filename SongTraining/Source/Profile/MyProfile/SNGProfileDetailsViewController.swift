@@ -31,6 +31,11 @@ class SNGProfileDetailsViewController: SNGViewController, WSRStoryboarded {
     @IBOutlet weak var navigationBar: UINavigationBar!
     
     deinit {
+        NotificationCenter.default.removeObserver(
+            self,
+            name: .noResultsModalDidClose,
+            object: nil)
+        
         self.removeNetworkObserver()
     }
     
@@ -44,6 +49,15 @@ class SNGProfileDetailsViewController: SNGViewController, WSRStoryboarded {
         //---
         
         try! self.addNetworkObserver()
+        NotificationCenter.default.addObserver(
+            forName: .noResultsModalDidClose,
+            object: nil,
+            queue: nil) { notification in
+            self.noResultsModalHandler(notification)
+        }
+        
+        //---
+        
         self.setupBinders()
         Task {
             await self.viewModel.getUserDetails()
@@ -125,6 +139,12 @@ class SNGProfileDetailsViewController: SNGViewController, WSRStoryboarded {
         deleteAccountSectionView.bottomAnchor.constraint(equalTo: containerView2.bottomAnchor).isActive = true
     }
     
+    // MARK: - Handlers
+    
+    private func noResultsModalHandler(_ notification: Notification) {
+        self.navigationController?.popViewController(animated: true)
+    }
+    
     // MARK: - View Models
     
     private func setupBinders() {
@@ -163,4 +183,5 @@ class SNGProfileDetailsViewController: SNGViewController, WSRStoryboarded {
             }
         }
     }
+    
 }

@@ -93,6 +93,7 @@
 		60CCF6422A57F0EE005BFC72 /* Reachability in Frameworks */ = {isa = PBXBuildFile; productRef = 60CCF6412A57F0EE005BFC72 /* Reachability */; };
 		60CCF6452A59A732005BFC72 /* WSRNetworkObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60CCF6442A59A732005BFC72 /* WSRNetworkObserver.swift */; };
 		60D5B2382A736F6B00212C99 /* Notification+WSR.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60D5B2372A736F6B00212C99 /* Notification+WSR.swift */; };
+		60D5B23A2A74543600212C99 /* Notifications+SNG.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60D5B2392A74543600212C99 /* Notifications+SNG.swift */; };
 		60D7DC8C2A5C3E2A0075D513 /* SNGNewsMinimalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60D7DC8B2A5C3E2A0075D513 /* SNGNewsMinimalViewController.swift */; };
 		60D7DC8E2A5C56A80075D513 /* SNGBannerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60D7DC8D2A5C56A80075D513 /* SNGBannerCollectionViewCell.swift */; };
 		60D7DC902A5C593C0075D513 /* SNGBannerCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 60D7DC8F2A5C593C0075D513 /* SNGBannerCollectionViewCell.xib */; };
@@ -208,6 +209,7 @@
 		60CCF63E2A57E33F005BFC72 /* SNGLocalization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNGLocalization.swift; sourceTree = "<group>"; };
 		60CCF6442A59A732005BFC72 /* WSRNetworkObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSRNetworkObserver.swift; sourceTree = "<group>"; };
 		60D5B2372A736F6B00212C99 /* Notification+WSR.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Notification+WSR.swift"; sourceTree = "<group>"; };
+		60D5B2392A74543600212C99 /* Notifications+SNG.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Notifications+SNG.swift"; sourceTree = "<group>"; };
 		60D7DC8B2A5C3E2A0075D513 /* SNGNewsMinimalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNGNewsMinimalViewController.swift; sourceTree = "<group>"; };
 		60D7DC8D2A5C56A80075D513 /* SNGBannerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNGBannerCollectionViewCell.swift; sourceTree = "<group>"; };
 		60D7DC8F2A5C593C0075D513 /* SNGBannerCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SNGBannerCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -591,6 +593,7 @@
 			isa = PBXGroup;
 			children = (
 				60DEA6AB2A6CE93100D0B844 /* String+SNG.swift */,
+				60D5B2392A74543600212C99 /* Notifications+SNG.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -790,6 +793,7 @@
 				606F72972A4BD89A0011F798 /* SceneDelegate.swift in Sources */,
 				6071E35C2A5513DA00D7C4A6 /* SNGProfileHeaderView.swift in Sources */,
 				6097129D2A53A9F60066A0FC /* SNGCarouselBannerViewController.swift in Sources */,
+				60D5B23A2A74543600212C99 /* Notifications+SNG.swift in Sources */,
 				6071E3472A54289700D7C4A6 /* WSRApiServiceProtocol.swift in Sources */,
 				60D5B2382A736F6B00212C99 /* Notification+WSR.swift in Sources */,
 				6071E36D2A555DE300D7C4A6 /* SNGSignInCoordinator.swift in Sources */,

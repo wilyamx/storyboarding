@@ -21,6 +21,11 @@ class SNGNewsViewController: SNGViewController, WSRStoryboarded {
             name: .reachabilityChanged,
             object: nil)
         
+        NotificationCenter.default.removeObserver(
+            self,
+            name: .noResultsModalDidClose,
+            object: nil)
+        
         self.removeNetworkObserver()
     }
     
@@ -35,6 +40,12 @@ class SNGNewsViewController: SNGViewController, WSRStoryboarded {
             object: nil,
             queue: nil) { notification in
             self.reachabilityConnectionHandler(notification)
+        }
+        NotificationCenter.default.addObserver(
+            forName: .noResultsModalDidClose,
+            object: nil,
+            queue: nil) { notification in
+            self.noResultsModalHandler(notification)
         }
         try! self.addNetworkObserver()
         
@@ -89,7 +100,7 @@ class SNGNewsViewController: SNGViewController, WSRStoryboarded {
                 if self?.errorAlert == nil, type != .badRequest {
                     DispatchQueue.main.async {
                         self?.errorAlert = SNGErrorAlertContainerView()
-                        self?.errorAlert?.showAlert(with: type, on: self!, withDelegate: nil)
+                        self?.errorAlert?.showAlert(with: type, on: self!, withDelegate: self)
                     }
                 }
             }
@@ -116,6 +127,10 @@ class SNGNewsViewController: SNGViewController, WSRStoryboarded {
             }
         }
     
+    }
+    
+    private func noResultsModalHandler(_ notification: Notification) {
+        self.navigationController?.popViewController(animated: true)
     }
 }
 
