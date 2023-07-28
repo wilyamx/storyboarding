@@ -29,15 +29,22 @@ extension WSRNetworkObserverDelegate {
         reachability?.whenReachable = { [weak self] reachability in
             //logger.info(message: "Reachable via \(reachability.connection)")
             self?.reachabilityChanged(true)
+            
+            // notify for with internet connection
+            NotificationCenter.default.post(name: .reachabilityChanged, object: true)
         }
         
         reachability?.whenUnreachable = { [weak self] reachability in
             //logger.info(message: "No connection")
             self?.reachabilityChanged(false)
+            
+            // notify for no internet connection
+            NotificationCenter.default.post(name: .reachabilityChanged, object: false)
         }
         
         do {
             try reachability?.startNotifier()
+            logger.info(message: "Start notifier reachability!")
         }
         catch {
             logger.error(message: "Cannot start reachability!")

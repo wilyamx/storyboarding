@@ -16,6 +16,11 @@ class SNGNewsViewController: SNGViewController, WSRStoryboarded {
     private var selectedCell: Int = -1
     
     deinit {
+        NotificationCenter.default.removeObserver(
+            self,
+            name: .reachabilityChanged,
+            object: nil)
+        
         self.removeNetworkObserver()
     }
     
@@ -25,11 +30,15 @@ class SNGNewsViewController: SNGViewController, WSRStoryboarded {
         super.viewDidLoad()
         self.setupViews()
         
-        try! self.addNetworkObserver()
-        self.setupBinders()
-        Task {
-            await self.viewModel.getPosts()
+        NotificationCenter.default.addObserver(
+            forName: .reachabilityChanged,
+            object: nil,
+            queue: nil) { notification in
+            self.reachabilityConnectionHandler(notification)
         }
+        try! self.addNetworkObserver()
+        
+        self.setupBinders()
     }
     
     // MARK: - Private Methods
@@ -77,7 +86,7 @@ class SNGNewsViewController: SNGViewController, WSRStoryboarded {
         
         self.viewModel.error.bind { [weak self] value in
             if let type = SNGErrorAlertType(rawValue: value) {
-                if self?.errorAlert == nil {
+                if self?.errorAlert == nil, type != .badRequest {
                     DispatchQueue.main.async {
                         self?.errorAlert = SNGErrorAlertContainerView()
                         self?.errorAlert?.showAlert(with: type, on: self!, withDelegate: nil)
@@ -94,6 +103,19 @@ class SNGNewsViewController: SNGViewController, WSRStoryboarded {
             }
         }
         
+    }
+    
+    // MARK: - Handlers
+    
+    private func reachabilityConnectionHandler(_ notification: Notification) {
+        if let object = notification.object as? Bool {
+            if object {
+                Task {
+                    await self.viewModel.getPosts()
+                }
+            }
+        }
+    
     }
 }
 

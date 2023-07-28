@@ -92,6 +92,7 @@
 		60CCF63F2A57E33F005BFC72 /* SNGLocalization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60CCF63E2A57E33F005BFC72 /* SNGLocalization.swift */; };
 		60CCF6422A57F0EE005BFC72 /* Reachability in Frameworks */ = {isa = PBXBuildFile; productRef = 60CCF6412A57F0EE005BFC72 /* Reachability */; };
 		60CCF6452A59A732005BFC72 /* WSRNetworkObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60CCF6442A59A732005BFC72 /* WSRNetworkObserver.swift */; };
+		60D5B2382A736F6B00212C99 /* Notification+WSR.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60D5B2372A736F6B00212C99 /* Notification+WSR.swift */; };
 		60D7DC8C2A5C3E2A0075D513 /* SNGNewsMinimalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60D7DC8B2A5C3E2A0075D513 /* SNGNewsMinimalViewController.swift */; };
 		60D7DC8E2A5C56A80075D513 /* SNGBannerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60D7DC8D2A5C56A80075D513 /* SNGBannerCollectionViewCell.swift */; };
 		60D7DC902A5C593C0075D513 /* SNGBannerCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 60D7DC8F2A5C593C0075D513 /* SNGBannerCollectionViewCell.xib */; };
@@ -206,6 +207,7 @@
 		60B4D2032A56DBDA00AC7CB9 /* SNGPostApis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNGPostApis.swift; sourceTree = "<group>"; };
 		60CCF63E2A57E33F005BFC72 /* SNGLocalization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNGLocalization.swift; sourceTree = "<group>"; };
 		60CCF6442A59A732005BFC72 /* WSRNetworkObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSRNetworkObserver.swift; sourceTree = "<group>"; };
+		60D5B2372A736F6B00212C99 /* Notification+WSR.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Notification+WSR.swift"; sourceTree = "<group>"; };
 		60D7DC8B2A5C3E2A0075D513 /* SNGNewsMinimalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNGNewsMinimalViewController.swift; sourceTree = "<group>"; };
 		60D7DC8D2A5C56A80075D513 /* SNGBannerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNGBannerCollectionViewCell.swift; sourceTree = "<group>"; };
 		60D7DC8F2A5C593C0075D513 /* SNGBannerCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SNGBannerCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -253,6 +255,7 @@
 				6071E33F2A54245700D7C4A6 /* UIColor+WSR.swift */,
 				6071E35D2A5519EC00D7C4A6 /* UIView+WSR.swift */,
 				60DEA6A52A6CD3C300D0B844 /* UIImageView+WSR.swift */,
+				60D5B2372A736F6B00212C99 /* Notification+WSR.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -788,6 +791,7 @@
 				6071E35C2A5513DA00D7C4A6 /* SNGProfileHeaderView.swift in Sources */,
 				6097129D2A53A9F60066A0FC /* SNGCarouselBannerViewController.swift in Sources */,
 				6071E3472A54289700D7C4A6 /* WSRApiServiceProtocol.swift in Sources */,
+				60D5B2382A736F6B00212C99 /* Notification+WSR.swift in Sources */,
 				6071E36D2A555DE300D7C4A6 /* SNGSignInCoordinator.swift in Sources */,
 				6071E35E2A5519EC00D7C4A6 /* UIView+WSR.swift in Sources */,
 				6071E3542A543F5400D7C4A6 /* SNGWeatherApis.swift in Sources */,

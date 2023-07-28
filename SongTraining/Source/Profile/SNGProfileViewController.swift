@@ -70,9 +70,11 @@ class SNGProfileViewController: SNGViewController, SNGTabBarContent {
         
         self.viewModel.error.bind { [weak self] value in
             if let type = SNGErrorAlertType(rawValue: value) {
-                DispatchQueue.main.async {
-                    let errorAlert = SNGErrorAlertContainerView()
-                    errorAlert.showAlert(with: type, on: self!, withDelegate: nil)
+                if self?.errorAlert == nil, type != .badRequest {
+                    DispatchQueue.main.async {
+                        let errorAlert = SNGErrorAlertContainerView()
+                        errorAlert.showAlert(with: type, on: self!, withDelegate: nil)
+                    }
                 }
             }
         }

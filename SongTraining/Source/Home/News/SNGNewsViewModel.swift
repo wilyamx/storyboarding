@@ -44,4 +44,5 @@ final class SNGNewsViewModel {
     func getPostList() -> [SNGPostModel] {
         return postData.value.data
     }
+    
 }
