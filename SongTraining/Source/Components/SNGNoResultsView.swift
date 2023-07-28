@@ -23,4 +23,8 @@ class SNGNoResultsView: UIView, WSRNibloadable {
         
         self.backgroundColor = UIColor.secondarySystemBackground
     }
+    
+    public func errorReason(reason: String) {
+        self.lblDescription.text = "\(reason)\nPlease try again later."
+    }
 }

@@ -537,9 +537,9 @@
 		60B4D1F52A569B0E00AC7CB9 /* News */ = {
 			isa = PBXGroup;
 			children = (
+				60B4D1F72A569B8300AC7CB9 /* SNGNewsViewController.swift */,
 				60B4D1F02A568ECA00AC7CB9 /* SNGNewsHeaderView.swift */,
 				60B4D1F22A568EDD00AC7CB9 /* SNGNewsHeaderView.xib */,
-				60B4D1F72A569B8300AC7CB9 /* SNGNewsViewController.swift */,
 				60B4D1F92A569E2F00AC7CB9 /* SNGNewsTableViewCell.swift */,
 				60B4D1FA2A569E2F00AC7CB9 /* SNGNewsTableViewCell.xib */,
 				60B4D1FD2A56B0D900AC7CB9 /* SNGNewsDetailViewController.swift */,

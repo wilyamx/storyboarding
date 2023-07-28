@@ -17,7 +17,7 @@ class SNGNewsHomeTableViewCell: UITableViewCell {
     
     lazy var noResultsView: SNGNoResultsView = {
         let view = SNGNoResultsView.viewFromNib()
-        view?.lblDescription.text = "Sorry, there are no news available at this time. Please try again later."
+        view?.lblDescription.text = "Sorry, there are no news available at this time.\nPlease try again later."
         view?.lighterTheme()
         return view!
     }()
@@ -83,6 +83,11 @@ class SNGNewsHomeTableViewCell: UITableViewCell {
                 }
                 else {
                     self?.noResultsView.isHidden = false
+                    
+                    if let type = SNGErrorAlertType(rawValue: value),
+                       type != .badRequest {
+                        self?.noResultsView.errorReason(reason: type.getMessage())
+                    }
                 }
             }
         }

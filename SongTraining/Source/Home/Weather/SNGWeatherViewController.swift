@@ -145,6 +145,12 @@ class SNGWeatherViewController: SNGViewController {
                 }
                 else {
                     self?.noResultsView.isHidden = false
+                    
+                    if let type = SNGErrorAlertType(rawValue: value),
+                       type != .badRequest {
+                        self?.noResultsView.errorReason(reason: type.getMessage())
+                    }
+                            
                 }
             }
         }
