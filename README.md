@@ -42,6 +42,9 @@
 	~ % nvm install lts/gallium
 	Now using node v16.20.1 (npm v8.19.4)
 	
+	~ % nvm alias default v16.20.1
+	default -> v16.20.1
+	
 	~ % nvm ls
 	       v14.21.3
 	->     v16.20.1
