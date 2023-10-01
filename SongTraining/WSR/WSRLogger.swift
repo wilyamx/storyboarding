@@ -15,6 +15,8 @@ enum WSRDebugInfoKey: String {
     //
     case realmDb = "[REALM-DB]>>"
     case messaging = "[MESSAGING]>>"
+    case map = "[MAP]>>"
+    case view = "[VIEW]>>"
     //
     case api = "[API]>>"
     case headers = "[HEADERS]>>"
@@ -55,7 +57,9 @@ struct WSRLogger {
                 (filteredLogKeys.count > 0 && filteredLogKeys.contains(logKey)) else {
             return
         }
+#if DEBUG
         print("\(logKey.rawValue) [\(type(of: any))] :: \(message)")
+#endif
     }
     
     /**
@@ -66,7 +70,9 @@ struct WSRLogger {
                 (filteredLogKeys.count > 0 && filteredLogKeys.contains(logKey)) else {
             return
         }
+#if DEBUG
         print("\(logKey.rawValue) [\(category)] :: \(message)")
+#endif
     }
     
     // MARK: - Private
@@ -81,8 +87,24 @@ struct WSRLogger {
             return
         }
         
+#if DEBUG
         let filename = URL(fileURLWithPath: file).deletingPathExtension().lastPathComponent
         print("\(category.rawValue) [\(filename).\(function):\(line)] - \(message)")
+#endif
+    }
+    
+    private func messageFormat(category: WSRDebugInfoKey,
+                               _ file: String,
+                               _ function: String,
+                               _ line: Int) {
+        guard (filteredLogKeys.count > 0 && filteredLogKeys.contains(category)) else {
+            return
+        }
+        
+        let filename = URL(fileURLWithPath: file).deletingPathExtension().lastPathComponent
+#if DEBUG
+        print("\(category.rawValue) [\(filename).\(function):\(line)]")
+#endif
     }
     
     // MARK: - Public
@@ -149,8 +171,25 @@ struct WSRLogger {
             return
         }
         
+#if DEBUG
         let directory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!.path
         print("\(WSRDebugInfoKey.realmDb.rawValue) \(directory)")
+#endif
+    }
+    
+    func map(message: String,
+              _ file: String = #file,
+              _ function: String = #function,
+              _ line: Int = #line) {
+        self.messageFormat(category: WSRDebugInfoKey.map,
+                           message: message, file, function, line)
+    }
+    
+    func view(_ file: String = #file,
+              _ function: String = #function,
+              _ line: Int = #line) {
+        self.messageFormat(category: WSRDebugInfoKey.view,
+                           file, function, line)
     }
     
     // MARK: - Request Details
@@ -161,12 +200,14 @@ struct WSRLogger {
         let headers = prettyPrintedString(from: request.allHTTPHeaderFields) ?? nullString
         let body = string(from: request.httpBody, prettyPrint: true) ?? nullString
         
+#if DEBUG
         print(separatorString)
         print("\(WSRDebugInfoKey.request.rawValue) \(method) \(url)")
         print("")
         print("\(WSRDebugInfoKey.headers.rawValue)\n\(headers)")
         print("")
         print("\(WSRDebugInfoKey.body.rawValue)\n\(body)")
+#endif
     }
     
     func response(request: URLRequest, httpResponse: HTTPURLResponse, data: Data) {
@@ -179,6 +220,7 @@ struct WSRLogger {
         let responseHeaders = prettyPrintedString(from: httpResponse.allHeaderFields) ?? nullString
         let responseData = string(from: data, prettyPrint: true) ?? nullString
 
+#if DEBUG
         print(separatorString)
         print("\(WSRDebugInfoKey.response.rawValue) \(requestMethod) \(responseStatusCode) \(requestUrl)")
         print("")
@@ -186,6 +228,7 @@ struct WSRLogger {
         print("")
         print("\(WSRDebugInfoKey.body.rawValue)\n\(responseData)")
         print(separatorString)
+#endif
     }
     
     // MARK: - Private Helpers
