@@ -9,6 +9,10 @@ import Foundation
 
 extension String {
     func stringWithDomainUrl() -> String {
-        return "http://localhost:8080\(self)"
+        // localhost server
+        //return "http://localhost:8080\(self)"
+        
+        // mock server using postman
+        return "https://672ef71b-4337-4ad9-946e-92699848933f.mock.pstmn.io\(self)"
     }
 }

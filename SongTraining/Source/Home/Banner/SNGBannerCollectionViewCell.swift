@@ -30,7 +30,7 @@ class SNGBannerCollectionViewCell: UICollectionViewCell {
         }
         
         imgvBackground.loadData(
-            urlText: mediaData.attributes.url.stringWithDomainUrl(),
+            urlText: mediaData.attributes.url,
             placeholder: UIImage(named: "PlaceholderNewsDetail")) {
             image, error in
             if error == nil {
