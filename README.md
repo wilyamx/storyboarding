@@ -35,7 +35,14 @@ iOS development training in Swift.
 	 <img src="screenshots/home-tab.png" alt="home-tab" height="400">
     <img src="screenshots/weather-location-select.png" alt="weather-location-select" height="400">
     <img src="screenshots/news.png" alt="news" height="400">
-    <img src="screenshots/profile-tab.png" alt="profile-tab" height="400">
+    <img src="screenshots/profile-registered.png" alt="profile-registered" height="400">
+</p>
+
+<p float="left">
+	<img src="screenshots/signin-1.png" alt="signin-1" height="400">
+	<img src="screenshots/signin-2.png" alt="signin-2" height="400">
+	<img src="screenshots/signin-3.png" alt="signin-3" height="400">
+	<img src="screenshots/signin-4.png" alt="signin-4" height="400">
 </p>
 
 <p float="left">
@@ -45,8 +52,9 @@ iOS development training in Swift.
 </p>
 
 <p float="left">
-	<img src="screenshots/profile-tab.png" alt="profile-tab" height="400">
-	<img src="screenshots/profile-details.png" alt="profile-details" height="400">
+	<img src="screenshots/profile-guest.png" alt="profile-guest" height="400">
+	<img src="screenshots/profile-registered.png" alt="profile-registered" height="400">
+	<img src="screenshots/profile-registered-details.png" alt="profile-registered-details" height="400">
 </p>
 
 ## Author
