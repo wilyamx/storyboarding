@@ -30,14 +30,22 @@ iOS development trainings in Swift.
 ## Screenshots
 
 <p float="left">
-	 <img src="screenshots/splash-screen.png" alt="-" height="400">
-    <img src="screenshots/home-tab.png" alt="-" height="400">
-    <img src="screenshots/weather-location-select.png" alt="-" height="400">
-    <img src="screenshots/news.png" alt="-" height="400">
-    <img src="screenshots/news-list.png" alt="-" height="400">
-    <img src="screenshots/news-details.png" alt="-" height="400">
-    <img src="screenshots/profile-tab.png" alt="-" height="400">
-    <img src="screenshots/profile-details.png" alt="-" height="400"
+	 <img src="screenshots/splash-screen.png" alt="splash-screen" height="400">
+	 <img src="screenshots/home-tab.png" alt="home-tab" height="400">
+    <img src="screenshots/weather-location-select.png" alt="weather-location-select" height="400">
+    <img src="screenshots/news.png" alt="news" height="400">
+    <img src="screenshots/profile-tab.png" alt="profile-tab" height="400">
+</p>
+
+<p float="left">
+	<img src="screenshots/news.png" alt="news" height="400">
+	<img src="screenshots/news-list.png" alt="news-list" height="400">
+	<img src="screenshots/news-details.png" alt="news-details" height="400">
+</p>
+
+<p float="left">
+	<img src="screenshots/profile-tab.png" alt="profile-tab" height="400">
+	<img src="screenshots/profile-details.png" alt="profile-details" height="400">
 </p>
 
 ## Author
