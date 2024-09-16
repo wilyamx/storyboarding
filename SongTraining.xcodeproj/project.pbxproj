@@ -31,7 +31,6 @@
 		606F72D92A4BE6A70011F798 /* SNGProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606F72D82A4BE6A70011F798 /* SNGProductsViewController.swift */; };
 		606F72DD2A4BEEFD0011F798 /* SNGConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606F72DC2A4BEEFD0011F798 /* SNGConstants.swift */; };
 		606F72E02A4BF5670011F798 /* SNGTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606F72DF2A4BF5670011F798 /* SNGTabBarController.swift */; };
-		606F72E22A4BFACF0011F798 /* WSRObservableObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606F72E12A4BFACF0011F798 /* WSRObservableObject.swift */; };
 		606F72E62A4BFCB80011F798 /* SNGViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606F72E52A4BFCB80011F798 /* SNGViewController.swift */; };
 		606F72E82A4BFD450011F798 /* SNGSignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606F72E72A4BFD450011F798 /* SNGSignInViewController.swift */; };
 		606F72EB2A4BFEDB0011F798 /* SNGSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606F72EA2A4BFEDB0011F798 /* SNGSignUpViewController.swift */; };
@@ -162,7 +161,6 @@
 		A2F08B3C2C98108F00DE5E95 /* SNGSupportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6071E3612A5523CF00D7C4A6 /* SNGSupportViewController.swift */; };
 		A2F08B3D2C98108F00DE5E95 /* SNGProfileDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B4D1EE2A567E6E00AC7CB9 /* SNGProfileDetailsViewModel.swift */; };
 		A2F08B3E2C98108F00DE5E95 /* SNGBannersApis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 604A001F2A59D13A00040269 /* SNGBannersApis.swift */; };
-		A2F08B3F2C98108F00DE5E95 /* WSRObservableObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606F72E12A4BFACF0011F798 /* WSRObservableObject.swift */; };
 		A2F08B402C98108F00DE5E95 /* SNGLoginInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 604165522A5287DA0032016E /* SNGLoginInputView.swift */; };
 		A2F08B412C98108F00DE5E95 /* SNGCartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606F72D22A4BE4C70011F798 /* SNGCartViewController.swift */; };
 		A2F08B422C98108F00DE5E95 /* SNGProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606F72D52A4BE5570011F798 /* SNGProfileViewController.swift */; };
@@ -240,7 +238,6 @@
 		606F72D82A4BE6A70011F798 /* SNGProductsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNGProductsViewController.swift; sourceTree = "<group>"; };
 		606F72DC2A4BEEFD0011F798 /* SNGConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNGConstants.swift; sourceTree = "<group>"; };
 		606F72DF2A4BF5670011F798 /* SNGTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNGTabBarController.swift; sourceTree = "<group>"; };
-		606F72E12A4BFACF0011F798 /* WSRObservableObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSRObservableObject.swift; sourceTree = "<group>"; };
 		606F72E52A4BFCB80011F798 /* SNGViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNGViewController.swift; sourceTree = "<group>"; };
 		606F72E72A4BFD450011F798 /* SNGSignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNGSignInViewController.swift; sourceTree = "<group>"; };
 		606F72EA2A4BFEDB0011F798 /* SNGSignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNGSignUpViewController.swift; sourceTree = "<group>"; };
@@ -475,7 +472,6 @@
 				60DEA6A72A6CD7C800D0B844 /* Cache */,
 				6071E3412A5427FC00D7C4A6 /* Networking */,
 				604165562A52B76E0032016E /* Extensions */,
-				606F72E12A4BFACF0011F798 /* WSRObservableObject.swift */,
 				606F73052A4C8C020011F798 /* WSRNibLoadable.swift */,
 			);
 			path = WSR;
@@ -950,7 +946,6 @@
 				6071E3622A5523CF00D7C4A6 /* SNGSupportViewController.swift in Sources */,
 				60B4D1EF2A567E6E00AC7CB9 /* SNGProfileDetailsViewModel.swift in Sources */,
 				604A00202A59D13A00040269 /* SNGBannersApis.swift in Sources */,
-				606F72E22A4BFACF0011F798 /* WSRObservableObject.swift in Sources */,
 				604165532A5287DA0032016E /* SNGLoginInputView.swift in Sources */,
 				606F72D32A4BE4C70011F798 /* SNGCartViewController.swift in Sources */,
 				606F72D62A4BE5570011F798 /* SNGProfileViewController.swift in Sources */,
@@ -1045,7 +1040,6 @@
 				A2F08B3C2C98108F00DE5E95 /* SNGSupportViewController.swift in Sources */,
 				A2F08B3D2C98108F00DE5E95 /* SNGProfileDetailsViewModel.swift in Sources */,
 				A2F08B3E2C98108F00DE5E95 /* SNGBannersApis.swift in Sources */,
-				A2F08B3F2C98108F00DE5E95 /* WSRObservableObject.swift in Sources */,
 				A2F08B402C98108F00DE5E95 /* SNGLoginInputView.swift in Sources */,
 				A2F08B412C98108F00DE5E95 /* SNGCartViewController.swift in Sources */,
 				A2F08B422C98108F00DE5E95 /* SNGProfileViewController.swift in Sources */,

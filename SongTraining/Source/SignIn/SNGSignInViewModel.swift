@@ -7,6 +7,7 @@
 
 import Foundation
 import WSRUtils
+import WSRCommon
 
 public enum SNGUserDefaultsKey: String, CaseIterable {
     case username = "SNGUsername"

@@ -7,6 +7,7 @@
 
 import Foundation
 import WSRUtils
+import WSRCommon
 
 final class SNGWeatherViewModel {
     var isLoading: WSRObservableObject<Bool> = WSRObservableObject(false)

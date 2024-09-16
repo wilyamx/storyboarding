@@ -7,6 +7,7 @@
 
 import UIKit
 import WSRUtils
+import WSRCommon
 
 final class SNGCarouselBannerViewModel {
     var isLoading: WSRObservableObject<Bool> = WSRObservableObject(false)
