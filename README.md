@@ -11,6 +11,7 @@ iOS development training in Swift.
 - Coordinator Design Pattern for navigation
 - Image Caching
 - **Postman API Mock Server** *(the backend code for api were lost but I was able to create a mock api and reverse engineering to support it)*
+- Errors Alert
 
 ## Requirements
 
