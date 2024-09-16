@@ -8,6 +8,7 @@
 
 import UIKit
 import WSRUtils
+import WSRMedia
 
 extension UIImageView {
     

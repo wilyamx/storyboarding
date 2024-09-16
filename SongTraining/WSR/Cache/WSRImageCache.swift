@@ -7,29 +7,6 @@
 
 import UIKit
 
-/**
-    https://xavier7t.com/image-caching-in-swiftui
- */
-class WSRImageCache {
-    static let shared = WSRImageCache()
-
-    private let cache = NSCache<NSString, UIImage>()
-
-    private init() {}
-
-    func set(_ image: UIImage, forKey key: String) {
-        cache.setObject(image, forKey: key as NSString)
-    }
-
-    func get(forKey key: String) -> UIImage? {
-        return cache.object(forKey: key as NSString)
-    }
-    
-    func remove(forKey key: String) {
-        return cache.removeObject(forKey: key as NSString)
-    }
-}
-
 enum WSRFileLoaderError: Error, CustomStringConvertible {
     case fileNotFound(String)
     case fileCannotLoad(Error)

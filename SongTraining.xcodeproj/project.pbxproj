@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		604165512A5282990032016E /* SNGLoginInputView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 604165502A5282990032016E /* SNGLoginInputView.xib */; };
 		604165532A5287DA0032016E /* SNGLoginInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 604165522A5287DA0032016E /* SNGLoginInputView.swift */; };
-		604165582A52B7E10032016E /* String+WSR.swift in Sources */ = {isa = PBXBuildFile; fileRef = 604165572A52B7E10032016E /* String+WSR.swift */; };
 		6041655A2A52DE1E0032016E /* SNGActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 604165592A52DE1E0032016E /* SNGActivityIndicator.swift */; };
 		6041655C2A5316E70032016E /* SNGKeychainAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6041655B2A5316E70032016E /* SNGKeychainAccess.swift */; };
 		604A001E2A59D07C00040269 /* SNGCarouselBannerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 604A001D2A59D07C00040269 /* SNGCarouselBannerViewModel.swift */; };
@@ -45,7 +44,6 @@
 		606F73012A4C82A90011F798 /* SNGErrorAlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 606F73002A4C82A90011F798 /* SNGErrorAlertView.xib */; };
 		606F73062A4C8C020011F798 /* WSRNibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606F73052A4C8C020011F798 /* WSRNibLoadable.swift */; };
 		6071E33C2A53CE4900D7C4A6 /* SNGWeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6071E33B2A53CE4900D7C4A6 /* SNGWeatherViewController.swift */; };
-		6071E3402A54245700D7C4A6 /* UIColor+WSR.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6071E33F2A54245700D7C4A6 /* UIColor+WSR.swift */; };
 		6071E3442A54285D00D7C4A6 /* WSRApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6071E3422A54285D00D7C4A6 /* WSRApiError.swift */; };
 		6071E3452A54285D00D7C4A6 /* WSRApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6071E3432A54285D00D7C4A6 /* WSRApiService.swift */; };
 		6071E3472A54289700D7C4A6 /* WSRApiServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6071E3462A54289700D7C4A6 /* WSRApiServiceProtocol.swift */; };
@@ -108,6 +106,8 @@
 		A2143B0B2C98463800B18146 /* WSRCommon in Frameworks */ = {isa = PBXBuildFile; productRef = A2143B0A2C98463800B18146 /* WSRCommon */; };
 		A2143B0D2C98463800B18146 /* WSRComponents in Frameworks */ = {isa = PBXBuildFile; productRef = A2143B0C2C98463800B18146 /* WSRComponents */; };
 		A2143B0F2C98463800B18146 /* WSRUtils in Frameworks */ = {isa = PBXBuildFile; productRef = A2143B0E2C98463800B18146 /* WSRUtils */; };
+		A2143B112C98495C00B18146 /* WSRMedia in Frameworks */ = {isa = PBXBuildFile; productRef = A2143B102C98495C00B18146 /* WSRMedia */; };
+		A2143B132C984A4800B18146 /* WSRMedia in Frameworks */ = {isa = PBXBuildFile; productRef = A2143B122C984A4800B18146 /* WSRMedia */; };
 		A2F08B052C98108F00DE5E95 /* SNGProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6071E3572A548CC900D7C4A6 /* SNGProfileModel.swift */; };
 		A2F08B062C98108F00DE5E95 /* WSRNetworkObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60CCF6442A59A732005BFC72 /* WSRNetworkObserver.swift */; };
 		A2F08B072C98108F00DE5E95 /* SNGNewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B4D1F92A569E2F00AC7CB9 /* SNGNewsTableViewCell.swift */; };
@@ -155,7 +155,6 @@
 		A2F08B342C98108F00DE5E95 /* UIView+WSR.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6071E35D2A5519EC00D7C4A6 /* UIView+WSR.swift */; };
 		A2F08B352C98108F00DE5E95 /* SNGWeatherApis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6071E3532A543F5400D7C4A6 /* SNGWeatherApis.swift */; };
 		A2F08B362C98108F00DE5E95 /* SNGSignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606F72E72A4BFD450011F798 /* SNGSignInViewController.swift */; };
-		A2F08B372C98108F00DE5E95 /* UIColor+WSR.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6071E33F2A54245700D7C4A6 /* UIColor+WSR.swift */; };
 		A2F08B382C98108F00DE5E95 /* SNGMedia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 605899A12A6CA6F50027B3E0 /* SNGMedia.swift */; };
 		A2F08B392C98108F00DE5E95 /* SNGViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606F72E52A4BFCB80011F798 /* SNGViewController.swift */; };
 		A2F08B3A2C98108F00DE5E95 /* Range+WSR.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606F72F42A4C330B0011F798 /* Range+WSR.swift */; };
@@ -180,7 +179,6 @@
 		A2F08B4D2C98108F00DE5E95 /* UITapGestureRecognizer+WSR.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606F72F22A4C32D50011F798 /* UITapGestureRecognizer+WSR.swift */; };
 		A2F08B4E2C98108F00DE5E95 /* SNGSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606F72EA2A4BFEDB0011F798 /* SNGSignUpViewController.swift */; };
 		A2F08B4F2C98108F00DE5E95 /* SNGAuthenticationApis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6071E34C2A542BBD00D7C4A6 /* SNGAuthenticationApis.swift */; };
-		A2F08B502C98108F00DE5E95 /* String+WSR.swift in Sources */ = {isa = PBXBuildFile; fileRef = 604165572A52B7E10032016E /* String+WSR.swift */; };
 		A2F08B562C98108F00DE5E95 /* SNGDeleteAccountView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 60B4D1EC2A56682500AC7CB9 /* SNGDeleteAccountView.xib */; };
 		A2F08B572C98108F00DE5E95 /* SNGNewsHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 60B4D1F22A568EDD00AC7CB9 /* SNGNewsHeaderView.xib */; };
 		A2F08B582C98108F00DE5E95 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 606F729F2A4BD89D0011F798 /* LaunchScreen.storyboard */; };
@@ -216,7 +214,6 @@
 /* Begin PBXFileReference section */
 		604165502A5282990032016E /* SNGLoginInputView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SNGLoginInputView.xib; sourceTree = "<group>"; };
 		604165522A5287DA0032016E /* SNGLoginInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNGLoginInputView.swift; sourceTree = "<group>"; };
-		604165572A52B7E10032016E /* String+WSR.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+WSR.swift"; sourceTree = "<group>"; };
 		604165592A52DE1E0032016E /* SNGActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNGActivityIndicator.swift; sourceTree = "<group>"; };
 		6041655B2A5316E70032016E /* SNGKeychainAccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNGKeychainAccess.swift; sourceTree = "<group>"; };
 		604A001D2A59D07C00040269 /* SNGCarouselBannerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNGCarouselBannerViewModel.swift; sourceTree = "<group>"; };
@@ -256,7 +253,6 @@
 		606F73002A4C82A90011F798 /* SNGErrorAlertView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SNGErrorAlertView.xib; sourceTree = "<group>"; };
 		606F73052A4C8C020011F798 /* WSRNibLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSRNibLoadable.swift; sourceTree = "<group>"; };
 		6071E33B2A53CE4900D7C4A6 /* SNGWeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNGWeatherViewController.swift; sourceTree = "<group>"; };
-		6071E33F2A54245700D7C4A6 /* UIColor+WSR.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+WSR.swift"; sourceTree = "<group>"; };
 		6071E3422A54285D00D7C4A6 /* WSRApiError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WSRApiError.swift; sourceTree = "<group>"; };
 		6071E3432A54285D00D7C4A6 /* WSRApiService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WSRApiService.swift; sourceTree = "<group>"; };
 		6071E3462A54289700D7C4A6 /* WSRApiServiceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WSRApiServiceProtocol.swift; sourceTree = "<group>"; };
@@ -321,6 +317,7 @@
 				A2143B0B2C98463800B18146 /* WSRCommon in Frameworks */,
 				A2143B0F2C98463800B18146 /* WSRUtils in Frameworks */,
 				A2143B0D2C98463800B18146 /* WSRComponents in Frameworks */,
+				A2143B132C984A4800B18146 /* WSRMedia in Frameworks */,
 				A2143B002C98215000B18146 /* IQKeyboardManagerSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -348,6 +345,7 @@
 				A2143B052C983D1900B18146 /* WSRCommon in Frameworks */,
 				A2143B092C983E4800B18146 /* WSRUtils in Frameworks */,
 				A2143B072C983D1900B18146 /* WSRComponents in Frameworks */,
+				A2143B112C98495C00B18146 /* WSRMedia in Frameworks */,
 				A2143B022C98215900B18146 /* IQKeyboardManagerSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -358,10 +356,8 @@
 		604165562A52B76E0032016E /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				604165572A52B7E10032016E /* String+WSR.swift */,
 				606F72F22A4C32D50011F798 /* UITapGestureRecognizer+WSR.swift */,
 				606F72F42A4C330B0011F798 /* Range+WSR.swift */,
-				6071E33F2A54245700D7C4A6 /* UIColor+WSR.swift */,
 				6071E35D2A5519EC00D7C4A6 /* UIView+WSR.swift */,
 				60DEA6A52A6CD3C300D0B844 /* UIImageView+WSR.swift */,
 				60D5B2372A736F6B00212C99 /* Notification+WSR.swift */,
@@ -719,6 +715,7 @@
 				A2143B0A2C98463800B18146 /* WSRCommon */,
 				A2143B0C2C98463800B18146 /* WSRComponents */,
 				A2143B0E2C98463800B18146 /* WSRUtils */,
+				A2143B122C984A4800B18146 /* WSRMedia */,
 			);
 			productName = SongTraining;
 			productReference = 606F72912A4BD89A0011F798 /* SongTraining.app */;
@@ -780,6 +777,7 @@
 				A2143B042C983D1900B18146 /* WSRCommon */,
 				A2143B062C983D1900B18146 /* WSRComponents */,
 				A2143B082C983E4800B18146 /* WSRUtils */,
+				A2143B102C98495C00B18146 /* WSRMedia */,
 			);
 			productName = SongTraining;
 			productReference = A2F08B662C98108F00DE5E95 /* SongTraining_DEV.app */;
@@ -945,7 +943,6 @@
 				6071E35E2A5519EC00D7C4A6 /* UIView+WSR.swift in Sources */,
 				6071E3542A543F5400D7C4A6 /* SNGWeatherApis.swift in Sources */,
 				606F72E82A4BFD450011F798 /* SNGSignInViewController.swift in Sources */,
-				6071E3402A54245700D7C4A6 /* UIColor+WSR.swift in Sources */,
 				605899A22A6CA6F50027B3E0 /* SNGMedia.swift in Sources */,
 				606F72E62A4BFCB80011F798 /* SNGViewController.swift in Sources */,
 				606F72F52A4C330B0011F798 /* Range+WSR.swift in Sources */,
@@ -970,7 +967,6 @@
 				606F72F32A4C32D50011F798 /* UITapGestureRecognizer+WSR.swift in Sources */,
 				606F72EB2A4BFEDB0011F798 /* SNGSignUpViewController.swift in Sources */,
 				6071E34D2A542BBD00D7C4A6 /* SNGAuthenticationApis.swift in Sources */,
-				604165582A52B7E10032016E /* String+WSR.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1042,7 +1038,6 @@
 				A2F08B342C98108F00DE5E95 /* UIView+WSR.swift in Sources */,
 				A2F08B352C98108F00DE5E95 /* SNGWeatherApis.swift in Sources */,
 				A2F08B362C98108F00DE5E95 /* SNGSignInViewController.swift in Sources */,
-				A2F08B372C98108F00DE5E95 /* UIColor+WSR.swift in Sources */,
 				A2F08B382C98108F00DE5E95 /* SNGMedia.swift in Sources */,
 				A2F08B392C98108F00DE5E95 /* SNGViewController.swift in Sources */,
 				A2F08B3A2C98108F00DE5E95 /* Range+WSR.swift in Sources */,
@@ -1067,7 +1062,6 @@
 				A2F08B4D2C98108F00DE5E95 /* UITapGestureRecognizer+WSR.swift in Sources */,
 				A2F08B4E2C98108F00DE5E95 /* SNGSignUpViewController.swift in Sources */,
 				A2F08B4F2C98108F00DE5E95 /* SNGAuthenticationApis.swift in Sources */,
-				A2F08B502C98108F00DE5E95 /* String+WSR.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1569,6 +1563,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = A2143B032C983D1900B18146 /* XCRemoteSwiftPackageReference "wsr" */;
 			productName = WSRUtils;
+		};
+		A2143B102C98495C00B18146 /* WSRMedia */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A2143B032C983D1900B18146 /* XCRemoteSwiftPackageReference "wsr" */;
+			productName = WSRMedia;
+		};
+		A2143B122C984A4800B18146 /* WSRMedia */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A2143B032C983D1900B18146 /* XCRemoteSwiftPackageReference "wsr" */;
+			productName = WSRMedia;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
