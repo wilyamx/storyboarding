@@ -161,7 +161,7 @@ class SNGProfileDetailsViewController: SNGViewController, WSRStoryboarded {
         
         self.viewModel.error.bind { [weak self] value in
             if let type = SNGErrorAlertType(rawValue: value) {
-                if self?.errorAlert == nil, type != .badRequest {
+                if self?.errorAlert == nil {
                     DispatchQueue.main.async {
                         self?.errorAlert = SNGErrorAlertContainerView()
                         self?.errorAlert?.showAlert(with: type, on: self!, withDelegate: self)

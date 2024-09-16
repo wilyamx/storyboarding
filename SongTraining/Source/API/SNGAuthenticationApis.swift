@@ -78,7 +78,7 @@ extension WSRApiService {
         var request = URLRequest(url: url)
         request.httpMethod = "GET"
         request.setValue("Bearer \(token)", forHTTPHeaderField: "Authorization")
-        request.addValue("400", forHTTPHeaderField: "x-mock-response-code")
+        request.addValue("200", forHTTPHeaderField: "x-mock-response-code")
         
         let (data, response) = try await session.data(for: request)
         
