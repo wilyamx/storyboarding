@@ -10,7 +10,7 @@ iOS development training in Swift.
 - Logger
 - Coordinator Design Pattern for navigation
 - Image Caching
-- Postman Mock Server + API
+- **Postman API Mock Server** *(the backend code for api were lost but I was able to create a mock api and reverse engineering to support it)*
 
 ## Requirements
 
