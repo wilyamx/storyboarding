@@ -12,8 +12,6 @@
 		604165582A52B7E10032016E /* String+WSR.swift in Sources */ = {isa = PBXBuildFile; fileRef = 604165572A52B7E10032016E /* String+WSR.swift */; };
 		6041655A2A52DE1E0032016E /* SNGActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 604165592A52DE1E0032016E /* SNGActivityIndicator.swift */; };
 		6041655C2A5316E70032016E /* SNGKeychainAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6041655B2A5316E70032016E /* SNGKeychainAccess.swift */; };
-		6041655F2A53183D0032016E /* KeychainSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 6041655E2A53183D0032016E /* KeychainSwift */; };
-		604A001C2A59C6D600040269 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 604A001B2A59C6D600040269 /* IQKeyboardManagerSwift */; };
 		604A001E2A59D07C00040269 /* SNGCarouselBannerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 604A001D2A59D07C00040269 /* SNGCarouselBannerViewModel.swift */; };
 		604A00202A59D13A00040269 /* SNGBannersApis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 604A001F2A59D13A00040269 /* SNGBannersApis.swift */; };
 		604A00222A59D1FA00040269 /* SNGBannerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 604A00212A59D1FA00040269 /* SNGBannerModel.swift */; };
@@ -90,7 +88,6 @@
 		60B4D2022A56DB6700AC7CB9 /* SNGNewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B4D2012A56DB6700AC7CB9 /* SNGNewsViewModel.swift */; };
 		60B4D2042A56DBDA00AC7CB9 /* SNGPostApis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B4D2032A56DBDA00AC7CB9 /* SNGPostApis.swift */; };
 		60CCF63F2A57E33F005BFC72 /* SNGLocalization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60CCF63E2A57E33F005BFC72 /* SNGLocalization.swift */; };
-		60CCF6422A57F0EE005BFC72 /* Reachability in Frameworks */ = {isa = PBXBuildFile; productRef = 60CCF6412A57F0EE005BFC72 /* Reachability */; };
 		60CCF6452A59A732005BFC72 /* WSRNetworkObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60CCF6442A59A732005BFC72 /* WSRNetworkObserver.swift */; };
 		60D5B2382A736F6B00212C99 /* Notification+WSR.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60D5B2372A736F6B00212C99 /* Notification+WSR.swift */; };
 		60D5B23A2A74543600212C99 /* Notifications+SNG.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60D5B2392A74543600212C99 /* Notifications+SNG.swift */; };
@@ -102,6 +99,12 @@
 		60DEA6A92A6CD7EF00D0B844 /* WSRImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DEA6A82A6CD7EF00D0B844 /* WSRImageCache.swift */; };
 		60DEA6AC2A6CE93100D0B844 /* String+SNG.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DEA6AB2A6CE93100D0B844 /* String+SNG.swift */; };
 		60DEA6AE2A6D411000D0B844 /* SNGApiEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DEA6AD2A6D411000D0B844 /* SNGApiEndpoints.swift */; };
+		A2143AF62C9820F400B18146 /* KeychainSwift in Frameworks */ = {isa = PBXBuildFile; productRef = A2143AF52C9820F400B18146 /* KeychainSwift */; };
+		A2143AF82C98210000B18146 /* KeychainSwift in Frameworks */ = {isa = PBXBuildFile; productRef = A2143AF72C98210000B18146 /* KeychainSwift */; };
+		A2143AFB2C98212200B18146 /* Reachability in Frameworks */ = {isa = PBXBuildFile; productRef = A2143AFA2C98212200B18146 /* Reachability */; };
+		A2143AFD2C98212D00B18146 /* Reachability in Frameworks */ = {isa = PBXBuildFile; productRef = A2143AFC2C98212D00B18146 /* Reachability */; };
+		A2143B002C98215000B18146 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = A2143AFF2C98215000B18146 /* IQKeyboardManagerSwift */; };
+		A2143B022C98215900B18146 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = A2143B012C98215900B18146 /* IQKeyboardManagerSwift */; };
 		A2F08B052C98108F00DE5E95 /* SNGProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6071E3572A548CC900D7C4A6 /* SNGProfileModel.swift */; };
 		A2F08B062C98108F00DE5E95 /* WSRNetworkObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60CCF6442A59A732005BFC72 /* WSRNetworkObserver.swift */; };
 		A2F08B072C98108F00DE5E95 /* SNGNewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B4D1F92A569E2F00AC7CB9 /* SNGNewsTableViewCell.swift */; };
@@ -178,9 +181,6 @@
 		A2F08B4E2C98108F00DE5E95 /* SNGSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606F72EA2A4BFEDB0011F798 /* SNGSignUpViewController.swift */; };
 		A2F08B4F2C98108F00DE5E95 /* SNGAuthenticationApis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6071E34C2A542BBD00D7C4A6 /* SNGAuthenticationApis.swift */; };
 		A2F08B502C98108F00DE5E95 /* String+WSR.swift in Sources */ = {isa = PBXBuildFile; fileRef = 604165572A52B7E10032016E /* String+WSR.swift */; };
-		A2F08B522C98108F00DE5E95 /* KeychainSwift in Frameworks */ = {isa = PBXBuildFile; productRef = A2F08AFE2C98108F00DE5E95 /* KeychainSwift */; };
-		A2F08B532C98108F00DE5E95 /* Reachability in Frameworks */ = {isa = PBXBuildFile; productRef = A2F08B002C98108F00DE5E95 /* Reachability */; };
-		A2F08B542C98108F00DE5E95 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = A2F08B022C98108F00DE5E95 /* IQKeyboardManagerSwift */; };
 		A2F08B562C98108F00DE5E95 /* SNGDeleteAccountView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 60B4D1EC2A56682500AC7CB9 /* SNGDeleteAccountView.xib */; };
 		A2F08B572C98108F00DE5E95 /* SNGNewsHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 60B4D1F22A568EDD00AC7CB9 /* SNGNewsHeaderView.xib */; };
 		A2F08B582C98108F00DE5E95 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 606F729F2A4BD89D0011F798 /* LaunchScreen.storyboard */; };
@@ -310,6 +310,7 @@
 		60DEA6A82A6CD7EF00D0B844 /* WSRImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSRImageCache.swift; sourceTree = "<group>"; };
 		60DEA6AB2A6CE93100D0B844 /* String+SNG.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+SNG.swift"; sourceTree = "<group>"; };
 		60DEA6AD2A6D411000D0B844 /* SNGApiEndpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNGApiEndpoints.swift; sourceTree = "<group>"; };
+		A2143AF22C981F4A00B18146 /* DEV-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "DEV-Info.plist"; sourceTree = "<group>"; };
 		A2F08B662C98108F00DE5E95 /* SongTraining_DEV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SongTraining_DEV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -318,9 +319,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6041655F2A53183D0032016E /* KeychainSwift in Frameworks */,
-				60CCF6422A57F0EE005BFC72 /* Reachability in Frameworks */,
-				604A001C2A59C6D600040269 /* IQKeyboardManagerSwift in Frameworks */,
+				A2143AF62C9820F400B18146 /* KeychainSwift in Frameworks */,
+				A2143AFB2C98212200B18146 /* Reachability in Frameworks */,
+				A2143B002C98215000B18146 /* IQKeyboardManagerSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,9 +343,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A2F08B522C98108F00DE5E95 /* KeychainSwift in Frameworks */,
-				A2F08B532C98108F00DE5E95 /* Reachability in Frameworks */,
-				A2F08B542C98108F00DE5E95 /* IQKeyboardManagerSwift in Frameworks */,
+				A2143AF82C98210000B18146 /* KeychainSwift in Frameworks */,
+				A2143AFD2C98212D00B18146 /* Reachability in Frameworks */,
+				A2143B022C98215900B18146 /* IQKeyboardManagerSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -368,6 +369,7 @@
 		606F72882A4BD89A0011F798 = {
 			isa = PBXGroup;
 			children = (
+				A2143AF22C981F4A00B18146 /* DEV-Info.plist */,
 				606F72932A4BD89A0011F798 /* SongTraining */,
 				606F72AA2A4BD89D0011F798 /* SongTrainingTests */,
 				606F72B42A4BD89D0011F798 /* SongTrainingUITests */,
@@ -719,9 +721,9 @@
 			);
 			name = SongTraining;
 			packageProductDependencies = (
-				6041655E2A53183D0032016E /* KeychainSwift */,
-				60CCF6412A57F0EE005BFC72 /* Reachability */,
-				604A001B2A59C6D600040269 /* IQKeyboardManagerSwift */,
+				A2143AF52C9820F400B18146 /* KeychainSwift */,
+				A2143AFA2C98212200B18146 /* Reachability */,
+				A2143AFF2C98215000B18146 /* IQKeyboardManagerSwift */,
 			);
 			productName = SongTraining;
 			productReference = 606F72912A4BD89A0011F798 /* SongTraining.app */;
@@ -777,9 +779,9 @@
 			);
 			name = SongTraining_DEV;
 			packageProductDependencies = (
-				A2F08AFE2C98108F00DE5E95 /* KeychainSwift */,
-				A2F08B002C98108F00DE5E95 /* Reachability */,
-				A2F08B022C98108F00DE5E95 /* IQKeyboardManagerSwift */,
+				A2143AF72C98210000B18146 /* KeychainSwift */,
+				A2143AFC2C98212D00B18146 /* Reachability */,
+				A2143B012C98215900B18146 /* IQKeyboardManagerSwift */,
 			);
 			productName = SongTraining;
 			productReference = A2F08B662C98108F00DE5E95 /* SongTraining_DEV.app */;
@@ -794,7 +796,7 @@
 				BuildIndependentTargetsInParallel = 1;
 				CLASSPREFIX = SNG;
 				LastSwiftUpdateCheck = 1430;
-				LastUpgradeCheck = 1430;
+				LastUpgradeCheck = 1520;
 				TargetAttributes = {
 					606F72902A4BD89A0011F798 = {
 						CreatedOnToolsVersion = 14.3;
@@ -819,9 +821,9 @@
 			);
 			mainGroup = 606F72882A4BD89A0011F798;
 			packageReferences = (
-				6041655D2A53183D0032016E /* XCRemoteSwiftPackageReference "keychain-swift" */,
-				60CCF6402A57F0EE005BFC72 /* XCRemoteSwiftPackageReference "Reachability" */,
-				604A001A2A59C6D600040269 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+				A2143AF42C9820F400B18146 /* XCRemoteSwiftPackageReference "keychain-swift" */,
+				A2143AF92C98212200B18146 /* XCRemoteSwiftPackageReference "Reachability" */,
+				A2143AFE2C98215000B18146 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
 			);
 			productRefGroup = 606F72922A4BD89A0011F798 /* Products */;
 			projectDirPath = "";
@@ -1147,6 +1149,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -1207,6 +1210,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -1474,23 +1478,15 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		6041655D2A53183D0032016E /* XCRemoteSwiftPackageReference "keychain-swift" */ = {
+		A2143AF42C9820F400B18146 /* XCRemoteSwiftPackageReference "keychain-swift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/evgenyneu/keychain-swift.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 20.0.0;
+				minimumVersion = 24.0.0;
 			};
 		};
-		604A001A2A59C6D600040269 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 6.0.0;
-			};
-		};
-		60CCF6402A57F0EE005BFC72 /* XCRemoteSwiftPackageReference "Reachability" */ = {
+		A2143AF92C98212200B18146 /* XCRemoteSwiftPackageReference "Reachability" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/ashleymills/Reachability.swift";
 			requirement = {
@@ -1498,61 +1494,45 @@
 				kind = branch;
 			};
 		};
-		A2F08AFF2C98108F00DE5E95 /* XCRemoteSwiftPackageReference "keychain-swift" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/evgenyneu/keychain-swift.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 20.0.0;
-			};
-		};
-		A2F08B012C98108F00DE5E95 /* XCRemoteSwiftPackageReference "Reachability" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/ashleymills/Reachability.swift";
-			requirement = {
-				branch = master;
-				kind = branch;
-			};
-		};
-		A2F08B032C98108F00DE5E95 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+		A2143AFE2C98215000B18146 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 6.0.0;
+				minimumVersion = 7.1.1;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		6041655E2A53183D0032016E /* KeychainSwift */ = {
+		A2143AF52C9820F400B18146 /* KeychainSwift */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 6041655D2A53183D0032016E /* XCRemoteSwiftPackageReference "keychain-swift" */;
+			package = A2143AF42C9820F400B18146 /* XCRemoteSwiftPackageReference "keychain-swift" */;
 			productName = KeychainSwift;
 		};
-		604A001B2A59C6D600040269 /* IQKeyboardManagerSwift */ = {
+		A2143AF72C98210000B18146 /* KeychainSwift */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 604A001A2A59C6D600040269 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			package = A2143AF42C9820F400B18146 /* XCRemoteSwiftPackageReference "keychain-swift" */;
+			productName = KeychainSwift;
+		};
+		A2143AFA2C98212200B18146 /* Reachability */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A2143AF92C98212200B18146 /* XCRemoteSwiftPackageReference "Reachability" */;
+			productName = Reachability;
+		};
+		A2143AFC2C98212D00B18146 /* Reachability */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A2143AF92C98212200B18146 /* XCRemoteSwiftPackageReference "Reachability" */;
+			productName = Reachability;
+		};
+		A2143AFF2C98215000B18146 /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A2143AFE2C98215000B18146 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
 			productName = IQKeyboardManagerSwift;
 		};
-		60CCF6412A57F0EE005BFC72 /* Reachability */ = {
+		A2143B012C98215900B18146 /* IQKeyboardManagerSwift */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 60CCF6402A57F0EE005BFC72 /* XCRemoteSwiftPackageReference "Reachability" */;
-			productName = Reachability;
-		};
-		A2F08AFE2C98108F00DE5E95 /* KeychainSwift */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = A2F08AFF2C98108F00DE5E95 /* XCRemoteSwiftPackageReference "keychain-swift" */;
-			productName = KeychainSwift;
-		};
-		A2F08B002C98108F00DE5E95 /* Reachability */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = A2F08B012C98108F00DE5E95 /* XCRemoteSwiftPackageReference "Reachability" */;
-			productName = Reachability;
-		};
-		A2F08B022C98108F00DE5E95 /* IQKeyboardManagerSwift */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = A2F08B032C98108F00DE5E95 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			package = A2143AFE2C98215000B18146 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
 			productName = IQKeyboardManagerSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
