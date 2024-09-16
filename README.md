@@ -1,20 +1,8 @@
 # Storyboarding Training
 
-## XCode Project
+iOS development trainings in Swift.
 
-- **IDE:** `XCode 14.3.1 for iOS 16.4`
-- **Language:** `Swift 5`
-- **Interface:** `Storyboard`
-
-## Dependencies
-
-### Package Dependencies
-
-- KeychainSwift `20.0.0`
-- Reachability `master`
-- IQKeyboardManagerSwift `6.5.12`
-
-## Feature
+## Features
 
 - MVVM
 - Remember Me
@@ -23,63 +11,35 @@
 - Coordinator Design Pattern for navigation
 - Image Caching
 
-## Server Configuration
+## Requirements
 
-	~ % cat ~/.zprofile 
-	eval "$(/opt/homebrew/bin/brew shellenv)"
-	
-	~ % cat ~/.zshrc
-	export NVM_DIR=~/.nvm
-	source $(brew --prefix nvm)/nvm.sh
-	
-	~ % source ~/.zshrc
-	
-	~ % nvm install --lts
-	~ % node --version 
-	v18.17.0
-	
-	~ % nvm install lts/gallium
-	Now using node v16.20.1 (npm v8.19.4)
-	
-	~ % nvm alias default v16.20.1
-	default -> v16.20.1
-	
-	~ % nvm ls
-	       v14.21.3
-	->     v16.20.1
-	       v18.17.0
-       
-	~ % npm --version
-	8.19.4
-	~ % which npm
-	/Users/william.rena/.nvm/versions/node/v16.20.1/bin/npm
-	
-	~ % mkdir ~/.localhost
-	~ % ls ~/.localhost                    
-	digital-products-cms
-	
-## Running the Server API (Localhost)
+- **IDE:** `XCode 14.3.1 for iOS 16.4`
+- **Language:** `Swift 5`
+- **Interface:** `Storyboard`
 
-	digital-products-cms % nvm use v16.20.1
-	Now using node v16.20.1 (npm v8.19.4)
+## Package Dependencies
 
-	~ % nvm ls
-		       v14.21.3
-		->     v16.20.1
-		       v18.17.0
-	       
-	~ % cd ~/.localhost
-	.localhost % ls
-	digital-products-cms
-	.localhost % cd digital-products-cms 
-	digital-products-cms %
+- KeychainSwift `20.0.0`
+- Reachability `master`
+- IQKeyboardManagerSwift `6.5.12`
 
-	digital-products-cms % yarn nx serve strapi
-	yarn run v1.22.19
-	...
-	http://localhost:8080/
+## Postman Mock URL
+
+`https://672ef71b-4337-4ad9-946e-92699848933f.mock.pstmn.io`
 	
-## Credentials
+## Screenshots
 
-* Username: wilyamx@gmail.com
-* password: Fed@00059
+<p float="left">
+	 <img src="screenshots/splash-screen.png" alt="-" height="400">
+    <img src="screenshots/home-tab.png" alt="-" height="400">
+    <img src="screenshots/weather-location-select.png" alt="-" height="400">
+    <img src="screenshots/news.png" alt="-" height="400">
+    <img src="screenshots/news-list.png" alt="-" height="400">
+    <img src="screenshots/news-details.png" alt="-" height="400">
+    <img src="screenshots/profile-tab.png" alt="-" height="400">
+    <img src="screenshots/profile-details.png" alt="-" height="400"
+</p>
+
+## Author
+
+William Saberon Reña, [wilyamx@gmail.com](wilyamx@gmail.com)
