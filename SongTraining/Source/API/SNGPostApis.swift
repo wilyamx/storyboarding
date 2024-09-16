@@ -24,6 +24,7 @@ extension WSRApiService {
         let session = URLSession(configuration: WSRApiService.getURLSessionConfiguration())
         var request = URLRequest(url: url)
         request.httpMethod = "GET"
+        request.addValue("200", forHTTPHeaderField: "x-mock-response-code")
         
         let (data, response) = try await session.data(for: request)
         
