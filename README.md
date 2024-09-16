@@ -52,6 +52,13 @@ iOS development training in Swift.
 </p>
 
 <p float="left">
+	<img src="screenshots/no-results-1.png" alt="no-results-1" height="400">
+	<img src="screenshots/no-results-2.png" alt="no-results-2" height="400">
+	<img src="screenshots/error-400-bad-request.png" alt="error-400-bad-request" height="400">
+	<img src="screenshots/error-500-something-went-wrong.png" alt="error-500-something-went-wrong" height="400">
+</p>
+
+<p float="left">
 	<img src="screenshots/profile-guest.png" alt="profile-guest" height="400">
 	<img src="screenshots/profile-registered.png" alt="profile-registered" height="400">
 	<img src="screenshots/profile-registered-details.png" alt="profile-registered-details" height="400">
