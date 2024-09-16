@@ -13,7 +13,7 @@ iOS development trainings in Swift.
 
 ## Requirements
 
-- **IDE:** `XCode 14.3.1 for iOS 16.4`
+- **IDE:** `XCode 15.2 for iOS 17.2`
 - **Language:** `Swift 5`
 - **Interface:** `Storyboard`
 
