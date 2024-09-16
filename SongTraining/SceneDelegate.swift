@@ -23,6 +23,14 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         guard let windowScene = (scene as? UIWindowScene) else { return }
         
+#if DEV
+    print("[INFO]>> DEVELOPMENT Environment")
+#elseif TEST
+    print("[INFO]>> TEST Environment")
+#else
+    print("[INFO]>> PRODUCTION Environment")
+#endif
+        
         // handle textfields so it is always on the top of the keyboard
         IQKeyboardManager.shared.enable = true
         

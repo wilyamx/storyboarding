@@ -32,8 +32,9 @@ extension WSRApiService {
         
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")
         request.addValue("application/json", forHTTPHeaderField: "Accept")
+#if DEV
         request.addValue("200", forHTTPHeaderField: "x-mock-response-code")
-        
+#endif
         let (data, response) = try await session.data(for: request)
         
         guard let httpResponse = response as? HTTPURLResponse else {
@@ -78,8 +79,9 @@ extension WSRApiService {
         var request = URLRequest(url: url)
         request.httpMethod = "GET"
         request.setValue("Bearer \(token)", forHTTPHeaderField: "Authorization")
+#if DEV
         request.addValue("200", forHTTPHeaderField: "x-mock-response-code")
-        
+#endif
         let (data, response) = try await session.data(for: request)
         
         guard let httpResponse = response as? HTTPURLResponse else {
