@@ -38,11 +38,8 @@
 		606F72EB2A4BFEDB0011F798 /* SNGSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606F72EA2A4BFEDB0011F798 /* SNGSignUpViewController.swift */; };
 		606F72ED2A4BFF070011F798 /* SNGSignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606F72EC2A4BFF070011F798 /* SNGSignInViewModel.swift */; };
 		606F72EF2A4BFF330011F798 /* SNGTabBarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606F72EE2A4BFF330011F798 /* SNGTabBarViewModel.swift */; };
-		606F72F12A4C2A9F0011F798 /* WSRLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606F72F02A4C2A9F0011F798 /* WSRLogger.swift */; };
 		606F72F32A4C32D50011F798 /* UITapGestureRecognizer+WSR.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606F72F22A4C32D50011F798 /* UITapGestureRecognizer+WSR.swift */; };
 		606F72F52A4C330B0011F798 /* Range+WSR.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606F72F42A4C330B0011F798 /* Range+WSR.swift */; };
-		606F72F72A4C56740011F798 /* WSRCoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606F72F62A4C56740011F798 /* WSRCoordinatorProtocol.swift */; };
-		606F72F92A4C572B0011F798 /* WSRStoryboardedProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606F72F82A4C572B0011F798 /* WSRStoryboardedProtocol.swift */; };
 		606F72FC2A4C5A2A0011F798 /* SNGCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606F72FB2A4C5A2A0011F798 /* SNGCoordinator.swift */; };
 		606F72FF2A4C73340011F798 /* SNGErrorAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606F72FE2A4C73340011F798 /* SNGErrorAlertView.swift */; };
 		606F73012A4C82A90011F798 /* SNGErrorAlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 606F73002A4C82A90011F798 /* SNGErrorAlertView.xib */; };
@@ -105,6 +102,12 @@
 		A2143AFD2C98212D00B18146 /* Reachability in Frameworks */ = {isa = PBXBuildFile; productRef = A2143AFC2C98212D00B18146 /* Reachability */; };
 		A2143B002C98215000B18146 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = A2143AFF2C98215000B18146 /* IQKeyboardManagerSwift */; };
 		A2143B022C98215900B18146 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = A2143B012C98215900B18146 /* IQKeyboardManagerSwift */; };
+		A2143B052C983D1900B18146 /* WSRCommon in Frameworks */ = {isa = PBXBuildFile; productRef = A2143B042C983D1900B18146 /* WSRCommon */; };
+		A2143B072C983D1900B18146 /* WSRComponents in Frameworks */ = {isa = PBXBuildFile; productRef = A2143B062C983D1900B18146 /* WSRComponents */; };
+		A2143B092C983E4800B18146 /* WSRUtils in Frameworks */ = {isa = PBXBuildFile; productRef = A2143B082C983E4800B18146 /* WSRUtils */; };
+		A2143B0B2C98463800B18146 /* WSRCommon in Frameworks */ = {isa = PBXBuildFile; productRef = A2143B0A2C98463800B18146 /* WSRCommon */; };
+		A2143B0D2C98463800B18146 /* WSRComponents in Frameworks */ = {isa = PBXBuildFile; productRef = A2143B0C2C98463800B18146 /* WSRComponents */; };
+		A2143B0F2C98463800B18146 /* WSRUtils in Frameworks */ = {isa = PBXBuildFile; productRef = A2143B0E2C98463800B18146 /* WSRUtils */; };
 		A2F08B052C98108F00DE5E95 /* SNGProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6071E3572A548CC900D7C4A6 /* SNGProfileModel.swift */; };
 		A2F08B062C98108F00DE5E95 /* WSRNetworkObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60CCF6442A59A732005BFC72 /* WSRNetworkObserver.swift */; };
 		A2F08B072C98108F00DE5E95 /* SNGNewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B4D1F92A569E2F00AC7CB9 /* SNGNewsTableViewCell.swift */; };
@@ -119,7 +122,6 @@
 		A2F08B102C98108F00DE5E95 /* SNGApiEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DEA6AD2A6D411000D0B844 /* SNGApiEndpoints.swift */; };
 		A2F08B112C98108F00DE5E95 /* SNGProfileDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6071E3632A55240300D7C4A6 /* SNGProfileDetailsViewController.swift */; };
 		A2F08B122C98108F00DE5E95 /* SNGBannerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60D7DC8D2A5C56A80075D513 /* SNGBannerCollectionViewCell.swift */; };
-		A2F08B132C98108F00DE5E95 /* WSRLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606F72F02A4C2A9F0011F798 /* WSRLogger.swift */; };
 		A2F08B142C98108F00DE5E95 /* SNGNewsMinimalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60D7DC8B2A5C3E2A0075D513 /* SNGNewsMinimalViewController.swift */; };
 		A2F08B152C98108F00DE5E95 /* SNGWeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6071E3512A543EC800D7C4A6 /* SNGWeatherViewModel.swift */; };
 		A2F08B162C98108F00DE5E95 /* SNGCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606F72FB2A4C5A2A0011F798 /* SNGCoordinator.swift */; };
@@ -129,11 +131,9 @@
 		A2F08B1A2C98108F00DE5E95 /* SNGViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6071E3492A54299500D7C4A6 /* SNGViewModel.swift */; };
 		A2F08B1B2C98108F00DE5E95 /* SNGProfileDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B4D1E72A55CF5100AC7CB9 /* SNGProfileDetailsView.swift */; };
 		A2F08B1C2C98108F00DE5E95 /* UIImageView+WSR.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DEA6A52A6CD3C300D0B844 /* UIImageView+WSR.swift */; };
-		A2F08B1D2C98108F00DE5E95 /* WSRCoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606F72F62A4C56740011F798 /* WSRCoordinatorProtocol.swift */; };
 		A2F08B1E2C98108F00DE5E95 /* SNGPostApis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B4D2032A56DBDA00AC7CB9 /* SNGPostApis.swift */; };
 		A2F08B1F2C98108F00DE5E95 /* SNGFavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606F72CD2A4BE48F0011F798 /* SNGFavoritesViewController.swift */; };
 		A2F08B202C98108F00DE5E95 /* WSRApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6071E3422A54285D00D7C4A6 /* WSRApiError.swift */; };
-		A2F08B212C98108F00DE5E95 /* WSRStoryboardedProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606F72F82A4C572B0011F798 /* WSRStoryboardedProtocol.swift */; };
 		A2F08B222C98108F00DE5E95 /* SNGNewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B4D1F72A569B8300AC7CB9 /* SNGNewsViewController.swift */; };
 		A2F08B232C98108F00DE5E95 /* SNGDeleteAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B4D1EA2A5667F400AC7CB9 /* SNGDeleteAccountView.swift */; };
 		A2F08B242C98108F00DE5E95 /* SNGNewsHomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60D7DC912A5D1ACA0075D513 /* SNGNewsHomeTableViewCell.swift */; };
@@ -249,11 +249,8 @@
 		606F72EA2A4BFEDB0011F798 /* SNGSignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNGSignUpViewController.swift; sourceTree = "<group>"; };
 		606F72EC2A4BFF070011F798 /* SNGSignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNGSignInViewModel.swift; sourceTree = "<group>"; };
 		606F72EE2A4BFF330011F798 /* SNGTabBarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNGTabBarViewModel.swift; sourceTree = "<group>"; };
-		606F72F02A4C2A9F0011F798 /* WSRLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WSRLogger.swift; sourceTree = "<group>"; };
 		606F72F22A4C32D50011F798 /* UITapGestureRecognizer+WSR.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITapGestureRecognizer+WSR.swift"; sourceTree = "<group>"; };
 		606F72F42A4C330B0011F798 /* Range+WSR.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Range+WSR.swift"; sourceTree = "<group>"; };
-		606F72F62A4C56740011F798 /* WSRCoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSRCoordinatorProtocol.swift; sourceTree = "<group>"; };
-		606F72F82A4C572B0011F798 /* WSRStoryboardedProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSRStoryboardedProtocol.swift; sourceTree = "<group>"; };
 		606F72FB2A4C5A2A0011F798 /* SNGCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNGCoordinator.swift; sourceTree = "<group>"; };
 		606F72FE2A4C73340011F798 /* SNGErrorAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNGErrorAlertView.swift; sourceTree = "<group>"; };
 		606F73002A4C82A90011F798 /* SNGErrorAlertView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SNGErrorAlertView.xib; sourceTree = "<group>"; };
@@ -321,6 +318,9 @@
 			files = (
 				A2143AF62C9820F400B18146 /* KeychainSwift in Frameworks */,
 				A2143AFB2C98212200B18146 /* Reachability in Frameworks */,
+				A2143B0B2C98463800B18146 /* WSRCommon in Frameworks */,
+				A2143B0F2C98463800B18146 /* WSRUtils in Frameworks */,
+				A2143B0D2C98463800B18146 /* WSRComponents in Frameworks */,
 				A2143B002C98215000B18146 /* IQKeyboardManagerSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -345,6 +345,9 @@
 			files = (
 				A2143AF82C98210000B18146 /* KeychainSwift in Frameworks */,
 				A2143AFD2C98212D00B18146 /* Reachability in Frameworks */,
+				A2143B052C983D1900B18146 /* WSRCommon in Frameworks */,
+				A2143B092C983E4800B18146 /* WSRUtils in Frameworks */,
+				A2143B072C983D1900B18146 /* WSRComponents in Frameworks */,
 				A2143B022C98215900B18146 /* IQKeyboardManagerSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -476,8 +479,6 @@
 				60DEA6A72A6CD7C800D0B844 /* Cache */,
 				6071E3412A5427FC00D7C4A6 /* Networking */,
 				604165562A52B76E0032016E /* Extensions */,
-				606F72FA2A4C572F0011F798 /* Coordinator */,
-				606F72F02A4C2A9F0011F798 /* WSRLogger.swift */,
 				606F72E12A4BFACF0011F798 /* WSRObservableObject.swift */,
 				606F73052A4C8C020011F798 /* WSRNibLoadable.swift */,
 			);
@@ -537,15 +538,6 @@
 				606F72E52A4BFCB80011F798 /* SNGViewController.swift */,
 			);
 			path = Base;
-			sourceTree = "<group>";
-		};
-		606F72FA2A4C572F0011F798 /* Coordinator */ = {
-			isa = PBXGroup;
-			children = (
-				606F72F62A4C56740011F798 /* WSRCoordinatorProtocol.swift */,
-				606F72F82A4C572B0011F798 /* WSRStoryboardedProtocol.swift */,
-			);
-			path = Coordinator;
 			sourceTree = "<group>";
 		};
 		606F72FD2A4C72F80011F798 /* Components */ = {
@@ -724,6 +716,9 @@
 				A2143AF52C9820F400B18146 /* KeychainSwift */,
 				A2143AFA2C98212200B18146 /* Reachability */,
 				A2143AFF2C98215000B18146 /* IQKeyboardManagerSwift */,
+				A2143B0A2C98463800B18146 /* WSRCommon */,
+				A2143B0C2C98463800B18146 /* WSRComponents */,
+				A2143B0E2C98463800B18146 /* WSRUtils */,
 			);
 			productName = SongTraining;
 			productReference = 606F72912A4BD89A0011F798 /* SongTraining.app */;
@@ -782,6 +777,9 @@
 				A2143AF72C98210000B18146 /* KeychainSwift */,
 				A2143AFC2C98212D00B18146 /* Reachability */,
 				A2143B012C98215900B18146 /* IQKeyboardManagerSwift */,
+				A2143B042C983D1900B18146 /* WSRCommon */,
+				A2143B062C983D1900B18146 /* WSRComponents */,
+				A2143B082C983E4800B18146 /* WSRUtils */,
 			);
 			productName = SongTraining;
 			productReference = A2F08B662C98108F00DE5E95 /* SongTraining_DEV.app */;
@@ -824,13 +822,14 @@
 				A2143AF42C9820F400B18146 /* XCRemoteSwiftPackageReference "keychain-swift" */,
 				A2143AF92C98212200B18146 /* XCRemoteSwiftPackageReference "Reachability" */,
 				A2143AFE2C98215000B18146 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+				A2143B032C983D1900B18146 /* XCRemoteSwiftPackageReference "wsr" */,
 			);
 			productRefGroup = 606F72922A4BD89A0011F798 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				606F72902A4BD89A0011F798 /* SongTraining */,
 				A2F08AFD2C98108F00DE5E95 /* SongTraining_DEV */,
+				606F72902A4BD89A0011F798 /* SongTraining */,
 				606F72A62A4BD89D0011F798 /* SongTrainingTests */,
 				606F72B02A4BD89D0011F798 /* SongTrainingUITests */,
 			);
@@ -913,7 +912,6 @@
 				60DEA6AE2A6D411000D0B844 /* SNGApiEndpoints.swift in Sources */,
 				6071E3642A55240300D7C4A6 /* SNGProfileDetailsViewController.swift in Sources */,
 				60D7DC8E2A5C56A80075D513 /* SNGBannerCollectionViewCell.swift in Sources */,
-				606F72F12A4C2A9F0011F798 /* WSRLogger.swift in Sources */,
 				60D7DC8C2A5C3E2A0075D513 /* SNGNewsMinimalViewController.swift in Sources */,
 				6071E3522A543EC800D7C4A6 /* SNGWeatherViewModel.swift in Sources */,
 				606F72FC2A4C5A2A0011F798 /* SNGCoordinator.swift in Sources */,
@@ -923,11 +921,9 @@
 				6071E34A2A54299500D7C4A6 /* SNGViewModel.swift in Sources */,
 				60B4D1E82A55CF5100AC7CB9 /* SNGProfileDetailsView.swift in Sources */,
 				60DEA6A62A6CD3C300D0B844 /* UIImageView+WSR.swift in Sources */,
-				606F72F72A4C56740011F798 /* WSRCoordinatorProtocol.swift in Sources */,
 				60B4D2042A56DBDA00AC7CB9 /* SNGPostApis.swift in Sources */,
 				606F72CF2A4BE48F0011F798 /* SNGFavoritesViewController.swift in Sources */,
 				6071E3442A54285D00D7C4A6 /* WSRApiError.swift in Sources */,
-				606F72F92A4C572B0011F798 /* WSRStoryboardedProtocol.swift in Sources */,
 				60B4D1F82A569B8300AC7CB9 /* SNGNewsViewController.swift in Sources */,
 				60B4D1EB2A5667F400AC7CB9 /* SNGDeleteAccountView.swift in Sources */,
 				60D7DC922A5D1ACA0075D513 /* SNGNewsHomeTableViewCell.swift in Sources */,
@@ -1013,7 +1009,6 @@
 				A2F08B102C98108F00DE5E95 /* SNGApiEndpoints.swift in Sources */,
 				A2F08B112C98108F00DE5E95 /* SNGProfileDetailsViewController.swift in Sources */,
 				A2F08B122C98108F00DE5E95 /* SNGBannerCollectionViewCell.swift in Sources */,
-				A2F08B132C98108F00DE5E95 /* WSRLogger.swift in Sources */,
 				A2F08B142C98108F00DE5E95 /* SNGNewsMinimalViewController.swift in Sources */,
 				A2F08B152C98108F00DE5E95 /* SNGWeatherViewModel.swift in Sources */,
 				A2F08B162C98108F00DE5E95 /* SNGCoordinator.swift in Sources */,
@@ -1023,11 +1018,9 @@
 				A2F08B1A2C98108F00DE5E95 /* SNGViewModel.swift in Sources */,
 				A2F08B1B2C98108F00DE5E95 /* SNGProfileDetailsView.swift in Sources */,
 				A2F08B1C2C98108F00DE5E95 /* UIImageView+WSR.swift in Sources */,
-				A2F08B1D2C98108F00DE5E95 /* WSRCoordinatorProtocol.swift in Sources */,
 				A2F08B1E2C98108F00DE5E95 /* SNGPostApis.swift in Sources */,
 				A2F08B1F2C98108F00DE5E95 /* SNGFavoritesViewController.swift in Sources */,
 				A2F08B202C98108F00DE5E95 /* WSRApiError.swift in Sources */,
-				A2F08B212C98108F00DE5E95 /* WSRStoryboardedProtocol.swift in Sources */,
 				A2F08B222C98108F00DE5E95 /* SNGNewsViewController.swift in Sources */,
 				A2F08B232C98108F00DE5E95 /* SNGDeleteAccountView.swift in Sources */,
 				A2F08B242C98108F00DE5E95 /* SNGNewsHomeTableViewCell.swift in Sources */,
@@ -1164,7 +1157,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -1219,7 +1212,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -1244,6 +1237,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1275,6 +1269,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1378,6 +1373,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1410,6 +1406,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1502,6 +1499,14 @@
 				minimumVersion = 7.1.1;
 			};
 		};
+		A2143B032C983D1900B18146 /* XCRemoteSwiftPackageReference "wsr" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/wilyamx/wsr";
+			requirement = {
+				branch = develop;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -1534,6 +1539,36 @@
 			isa = XCSwiftPackageProductDependency;
 			package = A2143AFE2C98215000B18146 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
 			productName = IQKeyboardManagerSwift;
+		};
+		A2143B042C983D1900B18146 /* WSRCommon */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A2143B032C983D1900B18146 /* XCRemoteSwiftPackageReference "wsr" */;
+			productName = WSRCommon;
+		};
+		A2143B062C983D1900B18146 /* WSRComponents */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A2143B032C983D1900B18146 /* XCRemoteSwiftPackageReference "wsr" */;
+			productName = WSRComponents;
+		};
+		A2143B082C983E4800B18146 /* WSRUtils */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A2143B032C983D1900B18146 /* XCRemoteSwiftPackageReference "wsr" */;
+			productName = WSRUtils;
+		};
+		A2143B0A2C98463800B18146 /* WSRCommon */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A2143B032C983D1900B18146 /* XCRemoteSwiftPackageReference "wsr" */;
+			productName = WSRCommon;
+		};
+		A2143B0C2C98463800B18146 /* WSRComponents */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A2143B032C983D1900B18146 /* XCRemoteSwiftPackageReference "wsr" */;
+			productName = WSRComponents;
+		};
+		A2143B0E2C98463800B18146 /* WSRUtils */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A2143B032C983D1900B18146 /* XCRemoteSwiftPackageReference "wsr" */;
+			productName = WSRUtils;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

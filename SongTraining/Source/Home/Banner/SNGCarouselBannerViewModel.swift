@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import WSRUtils
 
 final class SNGCarouselBannerViewModel {
     var isLoading: WSRObservableObject<Bool> = WSRObservableObject(false)
@@ -36,7 +37,7 @@ final class SNGCarouselBannerViewModel {
         }
         catch(let error) {
             if let error = error as? WSRApiError {
-                logger.api(message: error.description)
+                wsrLogger.api(message: error.description)
                 
                 if error.description == WSRApiError.badRequest.description {
                     self.isLoading.value = false
@@ -48,7 +49,7 @@ final class SNGCarouselBannerViewModel {
                 }
             }
             else {
-                logger.api(message: "\(error.localizedDescription)")
+                wsrLogger.api(message: "\(error.localizedDescription)")
                 
                 self.isLoading.value = false
                 self.error.value = SNGErrorAlertType.domain.rawValue

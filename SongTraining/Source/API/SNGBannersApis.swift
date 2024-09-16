@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import WSRUtils
 
 extension WSRApiService {
     func getBanners() async throws -> SNGBannerModel {
@@ -44,7 +45,7 @@ extension WSRApiService {
             }
         }
         
-        logger.api(request: request, httpResponse: httpResponse, data: data)
+        wsrLogger.api(request: request, httpResponse: httpResponse, data: data)
         
         do {
             let decoder = JSONDecoder()

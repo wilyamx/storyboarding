@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import WSRUtils
 
 struct WSRApiService: WSRApiServiceProtocol {
     /**
@@ -28,7 +29,7 @@ struct WSRApiService: WSRApiServiceProtocol {
             return
         }
         
-        logger.api(message: urlString)
+        wsrLogger.api(message: urlString)
         
         URLSession.shared.dataTask(
             with: url,

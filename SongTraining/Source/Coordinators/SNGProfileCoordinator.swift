@@ -6,10 +6,11 @@
 //
 
 import UIKit
+import WSRComponents
 
 class SNGProfileCoordinator: WSRCoordinatorProtocol {
     var childCoordinators = [WSRCoordinatorProtocol]()
-    var navigationController: UINavigationController
+    var navigationController: UINavigationController?
     
     init(navigationController: UINavigationController) {
         self.navigationController = navigationController
@@ -25,27 +26,27 @@ class SNGProfileCoordinator: WSRCoordinatorProtocol {
         let vc = SNGProfileDetailsViewController.instantiate()
         vc.coordinator = self
         vc.hidesBottomBarWhenPushed = true
-        navigationController.pushViewController(vc, animated: true)
+        navigationController?.pushViewController(vc, animated: true)
     }
     
     func settings() {
         let vc = SNGSettingsViewController.instantiate()
         vc.coordinator = self
         vc.hidesBottomBarWhenPushed = true
-        navigationController.pushViewController(vc, animated: true)
+        navigationController?.pushViewController(vc, animated: true)
     }
     
     func support() {
         let vc = SNGSupportViewController.instantiate()
         vc.coordinator = self
         vc.hidesBottomBarWhenPushed = true
-        navigationController.pushViewController(vc, animated: true)
+        navigationController?.pushViewController(vc, animated: true)
     }
     
     func signUp() {
         let vc = SNGSignUpViewController.instantiate()
         vc.hidesBottomBarWhenPushed = true
-        navigationController.pushViewController(vc, animated: true)
+        navigationController?.pushViewController(vc, animated: true)
     }
     
     func switchToSignIn() {

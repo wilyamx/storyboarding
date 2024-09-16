@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import WSRUtils
 
 class SNGHomeViewController: UITableViewController, SNGTabBarContent {
     
@@ -78,7 +79,7 @@ class SNGHomeViewController: UITableViewController, SNGTabBarContent {
     // MARK: - Public Methods
     
     public func refresh() {
-        logger.info(message: "Refreshing contents...")
+        wsrLogger.info(message: "Refreshing contents...")
         
         bannerVC?.refresh()
         weatherVC?.refresh()

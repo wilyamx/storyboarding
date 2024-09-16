@@ -6,10 +6,11 @@
 //
 
 import UIKit
+import WSRComponents
 
 class SNGSignInCoordinator: WSRCoordinatorProtocol {
     var childCoordinators = [WSRCoordinatorProtocol]()
-    var navigationController: UINavigationController
+    var navigationController: UINavigationController?
     
     init(navigationController: UINavigationController) {
         self.navigationController = navigationController
@@ -33,7 +34,7 @@ class SNGSignInCoordinator: WSRCoordinatorProtocol {
         
         let vc = SNGSignInViewController.instantiate()
         vc.coordinator = self
-        navigationController.pushViewController(vc, animated: true)
+        navigationController?.pushViewController(vc, animated: true)
         
         window.rootViewController = navigationController
     }
@@ -41,7 +42,7 @@ class SNGSignInCoordinator: WSRCoordinatorProtocol {
     func signUp() {
         let vc = SNGSignUpViewController.instantiate()
         vc.coordinator = self
-        navigationController.pushViewController(vc, animated: true)
+        navigationController?.pushViewController(vc, animated: true)
     }
     
     func skip() {

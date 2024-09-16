@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import WSRComponents
 
 class SNGNewsDetailViewController: SNGViewController, WSRStoryboarded {
 
