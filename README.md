@@ -19,9 +19,9 @@ iOS development trainings in Swift.
 
 ## Package Dependencies
 
-- KeychainSwift `20.0.0`
-- Reachability `master`
-- IQKeyboardManagerSwift `6.5.12`
+- [KeychainSwift](https://github.com/evgenyneu/keychain-swift.git) `20.0.0`
+- [Reachability](https://github.com/ashleymills/Reachability.swift) `master`
+- [IQKeyboardManagerSwift](https://github.com/hackiftekhar/IQKeyboardManager.git) `6.5.12`
 
 ## Postman Mock URL
 
