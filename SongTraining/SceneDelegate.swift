@@ -25,8 +25,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
 #if DEV
     print("[INFO]>> DEVELOPMENT Environment")
-#elseif TEST
-    print("[INFO]>> TEST Environment")
 #else
     print("[INFO]>> PRODUCTION Environment")
 #endif

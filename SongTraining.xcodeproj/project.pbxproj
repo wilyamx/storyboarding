@@ -102,6 +102,98 @@
 		60DEA6A92A6CD7EF00D0B844 /* WSRImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DEA6A82A6CD7EF00D0B844 /* WSRImageCache.swift */; };
 		60DEA6AC2A6CE93100D0B844 /* String+SNG.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DEA6AB2A6CE93100D0B844 /* String+SNG.swift */; };
 		60DEA6AE2A6D411000D0B844 /* SNGApiEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DEA6AD2A6D411000D0B844 /* SNGApiEndpoints.swift */; };
+		A2F08B052C98108F00DE5E95 /* SNGProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6071E3572A548CC900D7C4A6 /* SNGProfileModel.swift */; };
+		A2F08B062C98108F00DE5E95 /* WSRNetworkObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60CCF6442A59A732005BFC72 /* WSRNetworkObserver.swift */; };
+		A2F08B072C98108F00DE5E95 /* SNGNewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B4D1F92A569E2F00AC7CB9 /* SNGNewsTableViewCell.swift */; };
+		A2F08B082C98108F00DE5E95 /* SNGSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6071E35F2A5523B900D7C4A6 /* SNGSettingsViewController.swift */; };
+		A2F08B092C98108F00DE5E95 /* SNGNewsHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B4D1F02A568ECA00AC7CB9 /* SNGNewsHeaderView.swift */; };
+		A2F08B0A2C98108F00DE5E95 /* SNGProfileCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6071E3662A5543FC00D7C4A6 /* SNGProfileCoordinator.swift */; };
+		A2F08B0B2C98108F00DE5E95 /* SNGNewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B4D2012A56DB6700AC7CB9 /* SNGNewsViewModel.swift */; };
+		A2F08B0C2C98108F00DE5E95 /* SNGWeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6071E33B2A53CE4900D7C4A6 /* SNGWeatherViewController.swift */; };
+		A2F08B0D2C98108F00DE5E95 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606F72942A4BD89A0011F798 /* AppDelegate.swift */; };
+		A2F08B0E2C98108F00DE5E95 /* WSRImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DEA6A82A6CD7EF00D0B844 /* WSRImageCache.swift */; };
+		A2F08B0F2C98108F00DE5E95 /* SNGUserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6071E34F2A542DEE00D7C4A6 /* SNGUserModel.swift */; };
+		A2F08B102C98108F00DE5E95 /* SNGApiEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DEA6AD2A6D411000D0B844 /* SNGApiEndpoints.swift */; };
+		A2F08B112C98108F00DE5E95 /* SNGProfileDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6071E3632A55240300D7C4A6 /* SNGProfileDetailsViewController.swift */; };
+		A2F08B122C98108F00DE5E95 /* SNGBannerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60D7DC8D2A5C56A80075D513 /* SNGBannerCollectionViewCell.swift */; };
+		A2F08B132C98108F00DE5E95 /* WSRLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606F72F02A4C2A9F0011F798 /* WSRLogger.swift */; };
+		A2F08B142C98108F00DE5E95 /* SNGNewsMinimalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60D7DC8B2A5C3E2A0075D513 /* SNGNewsMinimalViewController.swift */; };
+		A2F08B152C98108F00DE5E95 /* SNGWeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6071E3512A543EC800D7C4A6 /* SNGWeatherViewModel.swift */; };
+		A2F08B162C98108F00DE5E95 /* SNGCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606F72FB2A4C5A2A0011F798 /* SNGCoordinator.swift */; };
+		A2F08B172C98108F00DE5E95 /* String+SNG.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DEA6AB2A6CE93100D0B844 /* String+SNG.swift */; };
+		A2F08B182C98108F00DE5E95 /* SNGCarouselBannerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 604A001D2A59D07C00040269 /* SNGCarouselBannerViewModel.swift */; };
+		A2F08B192C98108F00DE5E95 /* SNGMetaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 604A00232A59D4AA00040269 /* SNGMetaModel.swift */; };
+		A2F08B1A2C98108F00DE5E95 /* SNGViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6071E3492A54299500D7C4A6 /* SNGViewModel.swift */; };
+		A2F08B1B2C98108F00DE5E95 /* SNGProfileDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B4D1E72A55CF5100AC7CB9 /* SNGProfileDetailsView.swift */; };
+		A2F08B1C2C98108F00DE5E95 /* UIImageView+WSR.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DEA6A52A6CD3C300D0B844 /* UIImageView+WSR.swift */; };
+		A2F08B1D2C98108F00DE5E95 /* WSRCoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606F72F62A4C56740011F798 /* WSRCoordinatorProtocol.swift */; };
+		A2F08B1E2C98108F00DE5E95 /* SNGPostApis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B4D2032A56DBDA00AC7CB9 /* SNGPostApis.swift */; };
+		A2F08B1F2C98108F00DE5E95 /* SNGFavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606F72CD2A4BE48F0011F798 /* SNGFavoritesViewController.swift */; };
+		A2F08B202C98108F00DE5E95 /* WSRApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6071E3422A54285D00D7C4A6 /* WSRApiError.swift */; };
+		A2F08B212C98108F00DE5E95 /* WSRStoryboardedProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606F72F82A4C572B0011F798 /* WSRStoryboardedProtocol.swift */; };
+		A2F08B222C98108F00DE5E95 /* SNGNewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B4D1F72A569B8300AC7CB9 /* SNGNewsViewController.swift */; };
+		A2F08B232C98108F00DE5E95 /* SNGDeleteAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B4D1EA2A5667F400AC7CB9 /* SNGDeleteAccountView.swift */; };
+		A2F08B242C98108F00DE5E95 /* SNGNewsHomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60D7DC912A5D1ACA0075D513 /* SNGNewsHomeTableViewCell.swift */; };
+		A2F08B252C98108F00DE5E95 /* SNGTabBarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606F72EE2A4BFF330011F798 /* SNGTabBarViewModel.swift */; };
+		A2F08B262C98108F00DE5E95 /* SNGBannerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 604A00212A59D1FA00040269 /* SNGBannerModel.swift */; };
+		A2F08B272C98108F00DE5E95 /* WSRNibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606F73052A4C8C020011F798 /* WSRNibLoadable.swift */; };
+		A2F08B282C98108F00DE5E95 /* SNGErrorAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606F72FE2A4C73340011F798 /* SNGErrorAlertView.swift */; };
+		A2F08B292C98108F00DE5E95 /* SNGSignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606F72EC2A4BFF070011F798 /* SNGSignInViewModel.swift */; };
+		A2F08B2A2C98108F00DE5E95 /* SNGHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606F72C82A4BE43C0011F798 /* SNGHomeViewController.swift */; };
+		A2F08B2B2C98108F00DE5E95 /* SNGWeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6071E3552A54415D00D7C4A6 /* SNGWeatherModel.swift */; };
+		A2F08B2C2C98108F00DE5E95 /* SNGDummyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6071E36A2A554D1B00D7C4A6 /* SNGDummyView.swift */; };
+		A2F08B2D2C98108F00DE5E95 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606F72962A4BD89A0011F798 /* SceneDelegate.swift */; };
+		A2F08B2E2C98108F00DE5E95 /* SNGProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6071E35B2A5513DA00D7C4A6 /* SNGProfileHeaderView.swift */; };
+		A2F08B2F2C98108F00DE5E95 /* SNGCarouselBannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6097129C2A53A9F60066A0FC /* SNGCarouselBannerViewController.swift */; };
+		A2F08B302C98108F00DE5E95 /* Notifications+SNG.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60D5B2392A74543600212C99 /* Notifications+SNG.swift */; };
+		A2F08B312C98108F00DE5E95 /* WSRApiServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6071E3462A54289700D7C4A6 /* WSRApiServiceProtocol.swift */; };
+		A2F08B322C98108F00DE5E95 /* Notification+WSR.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60D5B2372A736F6B00212C99 /* Notification+WSR.swift */; };
+		A2F08B332C98108F00DE5E95 /* SNGSignInCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6071E36C2A555DE300D7C4A6 /* SNGSignInCoordinator.swift */; };
+		A2F08B342C98108F00DE5E95 /* UIView+WSR.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6071E35D2A5519EC00D7C4A6 /* UIView+WSR.swift */; };
+		A2F08B352C98108F00DE5E95 /* SNGWeatherApis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6071E3532A543F5400D7C4A6 /* SNGWeatherApis.swift */; };
+		A2F08B362C98108F00DE5E95 /* SNGSignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606F72E72A4BFD450011F798 /* SNGSignInViewController.swift */; };
+		A2F08B372C98108F00DE5E95 /* UIColor+WSR.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6071E33F2A54245700D7C4A6 /* UIColor+WSR.swift */; };
+		A2F08B382C98108F00DE5E95 /* SNGMedia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 605899A12A6CA6F50027B3E0 /* SNGMedia.swift */; };
+		A2F08B392C98108F00DE5E95 /* SNGViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606F72E52A4BFCB80011F798 /* SNGViewController.swift */; };
+		A2F08B3A2C98108F00DE5E95 /* Range+WSR.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606F72F42A4C330B0011F798 /* Range+WSR.swift */; };
+		A2F08B3B2C98108F00DE5E95 /* SNGProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606F72D82A4BE6A70011F798 /* SNGProductsViewController.swift */; };
+		A2F08B3C2C98108F00DE5E95 /* SNGSupportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6071E3612A5523CF00D7C4A6 /* SNGSupportViewController.swift */; };
+		A2F08B3D2C98108F00DE5E95 /* SNGProfileDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B4D1EE2A567E6E00AC7CB9 /* SNGProfileDetailsViewModel.swift */; };
+		A2F08B3E2C98108F00DE5E95 /* SNGBannersApis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 604A001F2A59D13A00040269 /* SNGBannersApis.swift */; };
+		A2F08B3F2C98108F00DE5E95 /* WSRObservableObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606F72E12A4BFACF0011F798 /* WSRObservableObject.swift */; };
+		A2F08B402C98108F00DE5E95 /* SNGLoginInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 604165522A5287DA0032016E /* SNGLoginInputView.swift */; };
+		A2F08B412C98108F00DE5E95 /* SNGCartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606F72D22A4BE4C70011F798 /* SNGCartViewController.swift */; };
+		A2F08B422C98108F00DE5E95 /* SNGProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606F72D52A4BE5570011F798 /* SNGProfileViewController.swift */; };
+		A2F08B432C98108F00DE5E95 /* SNGPostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B4D1FF2A56D9E200AC7CB9 /* SNGPostModel.swift */; };
+		A2F08B442C98108F00DE5E95 /* WSRApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6071E3432A54285D00D7C4A6 /* WSRApiService.swift */; };
+		A2F08B452C98108F00DE5E95 /* SNGNewsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B4D1FD2A56B0D900AC7CB9 /* SNGNewsDetailViewController.swift */; };
+		A2F08B462C98108F00DE5E95 /* SNGProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6097129A2A5324C60066A0FC /* SNGProfileViewModel.swift */; };
+		A2F08B472C98108F00DE5E95 /* SNGTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606F72DF2A4BF5670011F798 /* SNGTabBarController.swift */; };
+		A2F08B482C98108F00DE5E95 /* SNGLocalization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60CCF63E2A57E33F005BFC72 /* SNGLocalization.swift */; };
+		A2F08B492C98108F00DE5E95 /* SNGActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 604165592A52DE1E0032016E /* SNGActivityIndicator.swift */; };
+		A2F08B4A2C98108F00DE5E95 /* SNGConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606F72DC2A4BEEFD0011F798 /* SNGConstants.swift */; };
+		A2F08B4B2C98108F00DE5E95 /* SNGKeychainAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6041655B2A5316E70032016E /* SNGKeychainAccess.swift */; };
+		A2F08B4C2C98108F00DE5E95 /* SNGNoResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6071E3702A558C0600D7C4A6 /* SNGNoResultsView.swift */; };
+		A2F08B4D2C98108F00DE5E95 /* UITapGestureRecognizer+WSR.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606F72F22A4C32D50011F798 /* UITapGestureRecognizer+WSR.swift */; };
+		A2F08B4E2C98108F00DE5E95 /* SNGSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606F72EA2A4BFEDB0011F798 /* SNGSignUpViewController.swift */; };
+		A2F08B4F2C98108F00DE5E95 /* SNGAuthenticationApis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6071E34C2A542BBD00D7C4A6 /* SNGAuthenticationApis.swift */; };
+		A2F08B502C98108F00DE5E95 /* String+WSR.swift in Sources */ = {isa = PBXBuildFile; fileRef = 604165572A52B7E10032016E /* String+WSR.swift */; };
+		A2F08B522C98108F00DE5E95 /* KeychainSwift in Frameworks */ = {isa = PBXBuildFile; productRef = A2F08AFE2C98108F00DE5E95 /* KeychainSwift */; };
+		A2F08B532C98108F00DE5E95 /* Reachability in Frameworks */ = {isa = PBXBuildFile; productRef = A2F08B002C98108F00DE5E95 /* Reachability */; };
+		A2F08B542C98108F00DE5E95 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = A2F08B022C98108F00DE5E95 /* IQKeyboardManagerSwift */; };
+		A2F08B562C98108F00DE5E95 /* SNGDeleteAccountView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 60B4D1EC2A56682500AC7CB9 /* SNGDeleteAccountView.xib */; };
+		A2F08B572C98108F00DE5E95 /* SNGNewsHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 60B4D1F22A568EDD00AC7CB9 /* SNGNewsHeaderView.xib */; };
+		A2F08B582C98108F00DE5E95 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 606F729F2A4BD89D0011F798 /* LaunchScreen.storyboard */; };
+		A2F08B592C98108F00DE5E95 /* SNGProfileDetailsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 60B4D1E52A55CF2600AC7CB9 /* SNGProfileDetailsView.xib */; };
+		A2F08B5A2C98108F00DE5E95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 606F729D2A4BD89D0011F798 /* Assets.xcassets */; };
+		A2F08B5B2C98108F00DE5E95 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 606F729A2A4BD89A0011F798 /* Main.storyboard */; };
+		A2F08B5C2C98108F00DE5E95 /* SNGLoginInputView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 604165502A5282990032016E /* SNGLoginInputView.xib */; };
+		A2F08B5D2C98108F00DE5E95 /* SNGProfileHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6071E3592A55139B00D7C4A6 /* SNGProfileHeaderView.xib */; };
+		A2F08B5E2C98108F00DE5E95 /* SNGErrorAlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 606F73002A4C82A90011F798 /* SNGErrorAlertView.xib */; };
+		A2F08B5F2C98108F00DE5E95 /* SNGBannerCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 60D7DC8F2A5C593C0075D513 /* SNGBannerCollectionViewCell.xib */; };
+		A2F08B602C98108F00DE5E95 /* SNGNewsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 60B4D1FA2A569E2F00AC7CB9 /* SNGNewsTableViewCell.xib */; };
+		A2F08B612C98108F00DE5E95 /* SNGDummyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6071E3682A554D0300D7C4A6 /* SNGDummyView.xib */; };
+		A2F08B622C98108F00DE5E95 /* SNGNoResultsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6071E36E2A558BAC00D7C4A6 /* SNGNoResultsView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -218,6 +310,7 @@
 		60DEA6A82A6CD7EF00D0B844 /* WSRImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSRImageCache.swift; sourceTree = "<group>"; };
 		60DEA6AB2A6CE93100D0B844 /* String+SNG.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+SNG.swift"; sourceTree = "<group>"; };
 		60DEA6AD2A6D411000D0B844 /* SNGApiEndpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNGApiEndpoints.swift; sourceTree = "<group>"; };
+		A2F08B662C98108F00DE5E95 /* SongTraining_DEV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SongTraining_DEV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -242,6 +335,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2F08B512C98108F00DE5E95 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2F08B522C98108F00DE5E95 /* KeychainSwift in Frameworks */,
+				A2F08B532C98108F00DE5E95 /* Reachability in Frameworks */,
+				A2F08B542C98108F00DE5E95 /* IQKeyboardManagerSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,6 +381,7 @@
 				606F72912A4BD89A0011F798 /* SongTraining.app */,
 				606F72A72A4BD89D0011F798 /* SongTrainingTests.xctest */,
 				606F72B12A4BD89D0011F798 /* SongTrainingUITests.xctest */,
+				A2F08B662C98108F00DE5E95 /* SongTraining_DEV.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -659,6 +763,28 @@
 			productReference = 606F72B12A4BD89D0011F798 /* SongTrainingUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		A2F08AFD2C98108F00DE5E95 /* SongTraining_DEV */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A2F08B632C98108F00DE5E95 /* Build configuration list for PBXNativeTarget "SongTraining_DEV" */;
+			buildPhases = (
+				A2F08B042C98108F00DE5E95 /* Sources */,
+				A2F08B512C98108F00DE5E95 /* Frameworks */,
+				A2F08B552C98108F00DE5E95 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SongTraining_DEV;
+			packageProductDependencies = (
+				A2F08AFE2C98108F00DE5E95 /* KeychainSwift */,
+				A2F08B002C98108F00DE5E95 /* Reachability */,
+				A2F08B022C98108F00DE5E95 /* IQKeyboardManagerSwift */,
+			);
+			productName = SongTraining;
+			productReference = A2F08B662C98108F00DE5E95 /* SongTraining_DEV.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -702,6 +828,7 @@
 			projectRoot = "";
 			targets = (
 				606F72902A4BD89A0011F798 /* SongTraining */,
+				A2F08AFD2C98108F00DE5E95 /* SongTraining_DEV */,
 				606F72A62A4BD89D0011F798 /* SongTrainingTests */,
 				606F72B02A4BD89D0011F798 /* SongTrainingUITests */,
 			);
@@ -740,6 +867,26 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2F08B552C98108F00DE5E95 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2F08B562C98108F00DE5E95 /* SNGDeleteAccountView.xib in Resources */,
+				A2F08B572C98108F00DE5E95 /* SNGNewsHeaderView.xib in Resources */,
+				A2F08B582C98108F00DE5E95 /* LaunchScreen.storyboard in Resources */,
+				A2F08B592C98108F00DE5E95 /* SNGProfileDetailsView.xib in Resources */,
+				A2F08B5A2C98108F00DE5E95 /* Assets.xcassets in Resources */,
+				A2F08B5B2C98108F00DE5E95 /* Main.storyboard in Resources */,
+				A2F08B5C2C98108F00DE5E95 /* SNGLoginInputView.xib in Resources */,
+				A2F08B5D2C98108F00DE5E95 /* SNGProfileHeaderView.xib in Resources */,
+				A2F08B5E2C98108F00DE5E95 /* SNGErrorAlertView.xib in Resources */,
+				A2F08B5F2C98108F00DE5E95 /* SNGBannerCollectionViewCell.xib in Resources */,
+				A2F08B602C98108F00DE5E95 /* SNGNewsTableViewCell.xib in Resources */,
+				A2F08B612C98108F00DE5E95 /* SNGDummyView.xib in Resources */,
+				A2F08B622C98108F00DE5E95 /* SNGNoResultsView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -843,6 +990,89 @@
 			files = (
 				606F72B62A4BD89D0011F798 /* SongTrainingUITests.swift in Sources */,
 				606F72B82A4BD89D0011F798 /* SongTrainingUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2F08B042C98108F00DE5E95 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2F08B052C98108F00DE5E95 /* SNGProfileModel.swift in Sources */,
+				A2F08B062C98108F00DE5E95 /* WSRNetworkObserver.swift in Sources */,
+				A2F08B072C98108F00DE5E95 /* SNGNewsTableViewCell.swift in Sources */,
+				A2F08B082C98108F00DE5E95 /* SNGSettingsViewController.swift in Sources */,
+				A2F08B092C98108F00DE5E95 /* SNGNewsHeaderView.swift in Sources */,
+				A2F08B0A2C98108F00DE5E95 /* SNGProfileCoordinator.swift in Sources */,
+				A2F08B0B2C98108F00DE5E95 /* SNGNewsViewModel.swift in Sources */,
+				A2F08B0C2C98108F00DE5E95 /* SNGWeatherViewController.swift in Sources */,
+				A2F08B0D2C98108F00DE5E95 /* AppDelegate.swift in Sources */,
+				A2F08B0E2C98108F00DE5E95 /* WSRImageCache.swift in Sources */,
+				A2F08B0F2C98108F00DE5E95 /* SNGUserModel.swift in Sources */,
+				A2F08B102C98108F00DE5E95 /* SNGApiEndpoints.swift in Sources */,
+				A2F08B112C98108F00DE5E95 /* SNGProfileDetailsViewController.swift in Sources */,
+				A2F08B122C98108F00DE5E95 /* SNGBannerCollectionViewCell.swift in Sources */,
+				A2F08B132C98108F00DE5E95 /* WSRLogger.swift in Sources */,
+				A2F08B142C98108F00DE5E95 /* SNGNewsMinimalViewController.swift in Sources */,
+				A2F08B152C98108F00DE5E95 /* SNGWeatherViewModel.swift in Sources */,
+				A2F08B162C98108F00DE5E95 /* SNGCoordinator.swift in Sources */,
+				A2F08B172C98108F00DE5E95 /* String+SNG.swift in Sources */,
+				A2F08B182C98108F00DE5E95 /* SNGCarouselBannerViewModel.swift in Sources */,
+				A2F08B192C98108F00DE5E95 /* SNGMetaModel.swift in Sources */,
+				A2F08B1A2C98108F00DE5E95 /* SNGViewModel.swift in Sources */,
+				A2F08B1B2C98108F00DE5E95 /* SNGProfileDetailsView.swift in Sources */,
+				A2F08B1C2C98108F00DE5E95 /* UIImageView+WSR.swift in Sources */,
+				A2F08B1D2C98108F00DE5E95 /* WSRCoordinatorProtocol.swift in Sources */,
+				A2F08B1E2C98108F00DE5E95 /* SNGPostApis.swift in Sources */,
+				A2F08B1F2C98108F00DE5E95 /* SNGFavoritesViewController.swift in Sources */,
+				A2F08B202C98108F00DE5E95 /* WSRApiError.swift in Sources */,
+				A2F08B212C98108F00DE5E95 /* WSRStoryboardedProtocol.swift in Sources */,
+				A2F08B222C98108F00DE5E95 /* SNGNewsViewController.swift in Sources */,
+				A2F08B232C98108F00DE5E95 /* SNGDeleteAccountView.swift in Sources */,
+				A2F08B242C98108F00DE5E95 /* SNGNewsHomeTableViewCell.swift in Sources */,
+				A2F08B252C98108F00DE5E95 /* SNGTabBarViewModel.swift in Sources */,
+				A2F08B262C98108F00DE5E95 /* SNGBannerModel.swift in Sources */,
+				A2F08B272C98108F00DE5E95 /* WSRNibLoadable.swift in Sources */,
+				A2F08B282C98108F00DE5E95 /* SNGErrorAlertView.swift in Sources */,
+				A2F08B292C98108F00DE5E95 /* SNGSignInViewModel.swift in Sources */,
+				A2F08B2A2C98108F00DE5E95 /* SNGHomeViewController.swift in Sources */,
+				A2F08B2B2C98108F00DE5E95 /* SNGWeatherModel.swift in Sources */,
+				A2F08B2C2C98108F00DE5E95 /* SNGDummyView.swift in Sources */,
+				A2F08B2D2C98108F00DE5E95 /* SceneDelegate.swift in Sources */,
+				A2F08B2E2C98108F00DE5E95 /* SNGProfileHeaderView.swift in Sources */,
+				A2F08B2F2C98108F00DE5E95 /* SNGCarouselBannerViewController.swift in Sources */,
+				A2F08B302C98108F00DE5E95 /* Notifications+SNG.swift in Sources */,
+				A2F08B312C98108F00DE5E95 /* WSRApiServiceProtocol.swift in Sources */,
+				A2F08B322C98108F00DE5E95 /* Notification+WSR.swift in Sources */,
+				A2F08B332C98108F00DE5E95 /* SNGSignInCoordinator.swift in Sources */,
+				A2F08B342C98108F00DE5E95 /* UIView+WSR.swift in Sources */,
+				A2F08B352C98108F00DE5E95 /* SNGWeatherApis.swift in Sources */,
+				A2F08B362C98108F00DE5E95 /* SNGSignInViewController.swift in Sources */,
+				A2F08B372C98108F00DE5E95 /* UIColor+WSR.swift in Sources */,
+				A2F08B382C98108F00DE5E95 /* SNGMedia.swift in Sources */,
+				A2F08B392C98108F00DE5E95 /* SNGViewController.swift in Sources */,
+				A2F08B3A2C98108F00DE5E95 /* Range+WSR.swift in Sources */,
+				A2F08B3B2C98108F00DE5E95 /* SNGProductsViewController.swift in Sources */,
+				A2F08B3C2C98108F00DE5E95 /* SNGSupportViewController.swift in Sources */,
+				A2F08B3D2C98108F00DE5E95 /* SNGProfileDetailsViewModel.swift in Sources */,
+				A2F08B3E2C98108F00DE5E95 /* SNGBannersApis.swift in Sources */,
+				A2F08B3F2C98108F00DE5E95 /* WSRObservableObject.swift in Sources */,
+				A2F08B402C98108F00DE5E95 /* SNGLoginInputView.swift in Sources */,
+				A2F08B412C98108F00DE5E95 /* SNGCartViewController.swift in Sources */,
+				A2F08B422C98108F00DE5E95 /* SNGProfileViewController.swift in Sources */,
+				A2F08B432C98108F00DE5E95 /* SNGPostModel.swift in Sources */,
+				A2F08B442C98108F00DE5E95 /* WSRApiService.swift in Sources */,
+				A2F08B452C98108F00DE5E95 /* SNGNewsDetailViewController.swift in Sources */,
+				A2F08B462C98108F00DE5E95 /* SNGProfileViewModel.swift in Sources */,
+				A2F08B472C98108F00DE5E95 /* SNGTabBarController.swift in Sources */,
+				A2F08B482C98108F00DE5E95 /* SNGLocalization.swift in Sources */,
+				A2F08B492C98108F00DE5E95 /* SNGActivityIndicator.swift in Sources */,
+				A2F08B4A2C98108F00DE5E95 /* SNGConstants.swift in Sources */,
+				A2F08B4B2C98108F00DE5E95 /* SNGKeychainAccess.swift in Sources */,
+				A2F08B4C2C98108F00DE5E95 /* SNGNoResultsView.swift in Sources */,
+				A2F08B4D2C98108F00DE5E95 /* UITapGestureRecognizer+WSR.swift in Sources */,
+				A2F08B4E2C98108F00DE5E95 /* SNGSignUpViewController.swift in Sources */,
+				A2F08B4F2C98108F00DE5E95 /* SNGAuthenticationApis.swift in Sources */,
+				A2F08B502C98108F00DE5E95 /* String+WSR.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1129,6 +1359,70 @@
 			};
 			name = Release;
 		};
+		A2F08B642C98108F00DE5E95 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "DEV-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Kinetics (DEV)";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_SWIFT_FLAGS = "-DDEV";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.personal.SongTraining-DEV";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		A2F08B652C98108F00DE5E95 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "DEV-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Kinetics (DEV)";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_SWIFT_FLAGS = "-DDEV";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.personal.SongTraining-DEV";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1168,6 +1462,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		A2F08B632C98108F00DE5E95 /* Build configuration list for PBXNativeTarget "SongTraining_DEV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2F08B642C98108F00DE5E95 /* Debug */,
+				A2F08B652C98108F00DE5E95 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
@@ -1195,6 +1498,30 @@
 				kind = branch;
 			};
 		};
+		A2F08AFF2C98108F00DE5E95 /* XCRemoteSwiftPackageReference "keychain-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/evgenyneu/keychain-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 20.0.0;
+			};
+		};
+		A2F08B012C98108F00DE5E95 /* XCRemoteSwiftPackageReference "Reachability" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ashleymills/Reachability.swift";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		A2F08B032C98108F00DE5E95 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -1212,6 +1539,21 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 60CCF6402A57F0EE005BFC72 /* XCRemoteSwiftPackageReference "Reachability" */;
 			productName = Reachability;
+		};
+		A2F08AFE2C98108F00DE5E95 /* KeychainSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A2F08AFF2C98108F00DE5E95 /* XCRemoteSwiftPackageReference "keychain-swift" */;
+			productName = KeychainSwift;
+		};
+		A2F08B002C98108F00DE5E95 /* Reachability */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A2F08B012C98108F00DE5E95 /* XCRemoteSwiftPackageReference "Reachability" */;
+			productName = Reachability;
+		};
+		A2F08B022C98108F00DE5E95 /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A2F08B032C98108F00DE5E95 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
