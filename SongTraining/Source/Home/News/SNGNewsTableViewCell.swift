@@ -43,7 +43,7 @@ class SNGNewsTableViewCell: UITableViewCell, WSRNibloadable {
         
         if let mediaData = model.attributes.media?.data.first {
             let imageFormat = mediaData.attributes.formats.small
-            let imageUrlText = imageFormat.url.stringWithDomainUrl()
+            let imageUrlText = imageFormat.url
             
             self.imgvNews.loadData(
                 urlText: imageUrlText,

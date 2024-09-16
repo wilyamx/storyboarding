@@ -31,7 +31,7 @@ class SNGNewsDetailViewController: SNGViewController, WSRStoryboarded {
         
         if let mediaData = attributes.media?.data.first {
             let imageFormat = mediaData.attributes.formats.medium
-            let imageUrlText = imageFormat.url.stringWithDomainUrl()
+            let imageUrlText = imageFormat.url
             
             self.imgvContent.loadData(
                 urlText: imageUrlText,
