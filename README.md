@@ -1,6 +1,6 @@
 # Storyboarding Training
 
-iOS development trainings in Swift.
+iOS development training in Swift.
 
 ## Features
 
@@ -10,6 +10,7 @@ iOS development trainings in Swift.
 - Logger
 - Coordinator Design Pattern for navigation
 - Image Caching
+- Postman Mock Server + API
 
 ## Requirements
 
