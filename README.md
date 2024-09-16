@@ -1,5 +1,4 @@
 # Storyboarding Training
-### iOS Developer: William S. Reña
 
 ## XCode Project
 
