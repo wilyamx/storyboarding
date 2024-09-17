@@ -7,6 +7,8 @@
 // https://www.advancedswift.com/download-and-cache-images-in-swift/
 
 import UIKit
+import WSRUtils
+import WSRMedia
 
 extension UIImageView {
     
@@ -15,8 +17,8 @@ extension UIImageView {
         toFile file: URL,
         completion: @escaping (Data?, Error?) -> Void) {
             
-        logger.cache(message: "Downloading \(url)")
-        logger.cache(message: "Target Directory: \(file)")
+        wsrLogger.cache(message: "Downloading \(url)")
+        wsrLogger.cache(message: "Target Directory: \(file)")
             
 //        if FileManager.default.fileExists(atPath: file.path) {
 //            logger.cache(message: "File exist in directory: \(file.path)")
@@ -37,7 +39,7 @@ extension UIImageView {
                 completion(nil, error)
                 return
             }
-            logger.cache(message: "tempURL: \(tempURL)")
+            wsrLogger.cache(message: "tempURL: \(tempURL)")
             
             do {
                 // Remove any existing document at file
@@ -55,7 +57,7 @@ extension UIImageView {
             // Handle potential file system errors
             catch(let error) {
                 completion(nil, error)
-                logger.error(message: "\(error)")
+                wsrLogger.error(message: "\(error)")
             }
         }
 
@@ -74,7 +76,7 @@ extension UIImageView {
         
         guard let url = URL(string: urlText) else {
             completion(nil, WSRFileURLLoaderError.url)
-            logger.error(message: "Invalid url error! \(urlText)")
+            wsrLogger.error(message: "Invalid url error! \(urlText)")
             return
         }
         
@@ -87,7 +89,7 @@ extension UIImageView {
         )
         let fileExist = fileManager.fileExists( atPath: urlText)
             
-        logger.info(message: "fileCachePath: \(imagePath), isExist: \(fileExist)")
+        wsrLogger.info(message: "fileCachePath: \(imagePath), isExist: \(fileExist)")
             
         if fileExist {
             
@@ -112,13 +114,13 @@ extension UIImageView {
         
         if let cachedImage = WSRImageCache.shared.get(forKey: urlText) {
             completion(cachedImage, nil)
-            logger.cache(message: "Retrieve cached image \(urlText)")
+            wsrLogger.cache(message: "Retrieve cached image \(urlText)")
             return
         }
         
         guard let url = URL(string: urlText) else {
             completion(nil, WSRFileURLLoaderError.url)
-            logger.error(message: "Invalid url error! \(urlText)")
+            wsrLogger.error(message: "Invalid url error! \(urlText)")
             return
         }
         
@@ -128,7 +130,7 @@ extension UIImageView {
             
             guard let data = data, error == nil else {
                 completion(nil, WSRFileURLLoaderError.url)
-                logger.error(message: "Request error! \(urlText)")
+                wsrLogger.error(message: "Request error! \(urlText)")
                 return
             }
 
@@ -136,12 +138,12 @@ extension UIImageView {
                 completion(image, nil)
                 WSRImageCache.shared.set(image, forKey: urlText)
                 
-                logger.log(category: .cache, message: urlText)
-                logger.cache(message: "Cache image \(urlText)")
+                wsrLogger.log(category: .cache, message: urlText)
+                wsrLogger.cache(message: "Cache image \(urlText)")
             }
             else {
                 completion(nil, WSRFileURLLoaderError.data)
-                logger.error(message: "Corrupt data for \(urlText)")
+                wsrLogger.error(message: "Corrupt data for \(urlText)")
             }
         }
         
@@ -152,7 +154,7 @@ extension UIImageView {
     func unloadData(urlText: String) {
         if let _ = WSRImageCache.shared.get(forKey: urlText) {
             WSRImageCache.shared.remove(forKey: urlText)
-            logger.info(message: "Image remove from cache \(urlText)")
+            wsrLogger.info(message: "Image remove from cache \(urlText)")
         }
     }
 }

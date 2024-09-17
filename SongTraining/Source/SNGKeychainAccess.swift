@@ -8,6 +8,7 @@
 
 import Foundation
 import KeychainSwift
+import WSRUtils
 
 public enum SNGKeychainAccessKey: String {
     case token = "SNGToken"
@@ -23,7 +24,7 @@ public class SNGKeychainAccess {
     
     public func storeHashInKeychain(key: SNGKeychainAccessKey, value: String) {
         keychain.set(value, forKey: key.rawValue)
-        logger.cache(message: "storeHashInKeychain for key: \(key.rawValue)")
+        wsrLogger.cache(message: "storeHashInKeychain for key: \(key.rawValue)")
     }
     
     public func retrieveHashInKeychain(for key: SNGKeychainAccessKey) -> String? {
@@ -32,10 +33,10 @@ public class SNGKeychainAccess {
     
     public func removeItemFromKeychain(for key: SNGKeychainAccessKey) {
         if keychain.delete(key.rawValue) {
-            logger.cache(message: "Delete token success!")
+            wsrLogger.cache(message: "Delete token success!")
         }
         else {
-            logger.cache(message: "Delete token failed!")
+            wsrLogger.cache(message: "Delete token failed!")
         }
     }
 }

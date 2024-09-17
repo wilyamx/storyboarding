@@ -8,6 +8,7 @@
 
 import Foundation
 import Reachability
+import WSRUtils
 
 protocol WSRNetworkActionDelegate {
     func reachabilityChanged(_ isReachable: Bool)
@@ -44,10 +45,10 @@ extension WSRNetworkObserverDelegate {
         
         do {
             try reachability?.startNotifier()
-            logger.info(message: "Start notifier reachability!")
+            wsrLogger.info(message: "Start notifier reachability!")
         }
         catch {
-            logger.error(message: "Cannot start reachability!")
+            wsrLogger.error(message: "Cannot start reachability!")
         }
     }
     

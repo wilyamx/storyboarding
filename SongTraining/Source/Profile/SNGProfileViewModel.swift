@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import WSRCommon
 
 final class SNGProfileViewModel {
     var isLoading: WSRObservableObject<Bool> = WSRObservableObject(false)

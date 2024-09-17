@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import WSRUtils
 
 class SNGNewsMinimalViewController: SNGViewController {
 
@@ -94,7 +95,7 @@ class SNGNewsMinimalViewController: SNGViewController {
     // MARK: - Actions
     
     @objc func item1Tap(_ sender: UITapGestureRecognizer) {
-        logger.info(message: "Bacground tap!")
+        wsrLogger.info(message: "Bacground tap!")
         
     }
     

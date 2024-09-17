@@ -26,6 +26,24 @@
         "branch" : "master",
         "revision" : "7cbd73f46a7dfaeca079e18df7324c6de6d1834a"
       }
+    },
+    {
+      "identity" : "supereasylayout",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/doil6317/SuperEasyLayout.git",
+      "state" : {
+        "revision" : "0d2a9111aa62e6f2b2a3bb70e526e5cf00e9f8f6",
+        "version" : "0.3.0"
+      }
+    },
+    {
+      "identity" : "wsr",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/wilyamx/wsr",
+      "state" : {
+        "branch" : "develop",
+        "revision" : "65ec5c4ab3003215c5dbb7e62d0cd070eba70542"
+      }
     }
   ],
   "version" : 2

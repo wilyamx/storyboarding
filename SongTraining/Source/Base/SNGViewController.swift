@@ -7,6 +7,7 @@
 
 import UIKit
 import Reachability
+import WSRUtils
 
 class SNGViewController: UIViewController, WSRNetworkObserverDelegate {
     
@@ -107,19 +108,19 @@ extension SNGViewController: SNGErrorAlertViewDelegate {
             if UIApplication.shared.canOpenURL(settingsUrl) {
                 UIApplication.shared.open(settingsUrl,
                                           completionHandler: { (success) in
-                    logger.info(message: "Settings opened: \(success)")
+                    wsrLogger.info(message: "Settings opened: \(success)")
                 })
             }
         }
         self.errorAlert = nil
         NotificationCenter.default.post(name: .noResultsModalDidClose, object: false)
-        logger.info(message: "Error alert message closed!")
+        wsrLogger.info(message: "Error alert message closed!")
     }
 }
 
 extension SNGViewController: WSRNetworkActionDelegate {
     func reachabilityChanged(_ isReachable: Bool) {
-        logger.info(message: "isReachable? \(isReachable)")
+        wsrLogger.info(message: "isReachable? \(isReachable)")
         
         if isReachable {
             DispatchQueue.main.async {

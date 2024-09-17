@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import WSRUtils
 
 enum SNGScreenTab: String {
     case home = "SNGHomeViewController"
@@ -115,7 +116,7 @@ class SNGTabBarController: UITabBarController {
     }
     
     override func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
-        logger.info(message: "Switched Tab: \(item.title ?? "")")
+        wsrLogger.info(message: "Switched Tab: \(item.title ?? "")")
         
         // Home TabItem
         // Refresh will happened when tabitem already selected

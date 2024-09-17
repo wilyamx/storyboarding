@@ -6,6 +6,8 @@
 //
 
 import Foundation
+import WSRUtils
+import WSRCommon
 
 final class SNGNewsViewModel {
     var isLoading: WSRObservableObject<Bool> = WSRObservableObject(false)
@@ -27,7 +29,7 @@ final class SNGNewsViewModel {
         }
         catch(let error) {
             if let error = error as? WSRApiError {
-                logger.api(message: error.description)
+                wsrLogger.api(message: error.description)
                 
                 if error.description == WSRApiError.badRequest.description {
                     self.isLoading.value = false
@@ -39,7 +41,7 @@ final class SNGNewsViewModel {
                 }
             }
             else {
-                logger.api(message: "\(error.localizedDescription)")
+                wsrLogger.api(message: "\(error.localizedDescription)")
                 
                 self.isLoading.value = false
                 self.error.value = SNGErrorAlertType.domain.rawValue

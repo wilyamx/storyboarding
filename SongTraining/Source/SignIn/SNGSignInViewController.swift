@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import WSRComponents
+import WSRUtils
 
 class SNGSignInViewController: SNGViewController, WSRStoryboarded {
 
@@ -268,7 +270,7 @@ class SNGSignInViewController: SNGViewController, WSRStoryboarded {
     // MARK: - Actions
     
     @objc func forgotPasswordTapped(_ sender: UITapGestureRecognizer) {
-        logger.info(message: "Forgot password")
+        wsrLogger.info(message: "Forgot password")
     }
     
     @objc func signUpTapped(_ sender: UITapGestureRecognizer) {

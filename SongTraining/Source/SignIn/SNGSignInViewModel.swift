@@ -6,6 +6,8 @@
 //
 
 import Foundation
+import WSRUtils
+import WSRCommon
 
 public enum SNGUserDefaultsKey: String, CaseIterable {
     case username = "SNGUsername"
@@ -42,11 +44,11 @@ final class SNGSignInViewModel {
             self.error.value = ""
             self.isLoggedIn.value = true
             
-            logger.api(message: "Login complete!")
+            wsrLogger.api(message: "Login complete!")
         }
         catch(let error) {
             if let error = error as? WSRApiError {
-                logger.api(message: error.description)
+                wsrLogger.api(message: error.description)
                 
                 if error.description == WSRApiError.badRequest.description {
                     self.isLoading.value = false
@@ -60,7 +62,7 @@ final class SNGSignInViewModel {
                 }
             }
             else {
-                logger.api(message: "\(error.localizedDescription)")
+                wsrLogger.api(message: "\(error.localizedDescription)")
                 
                 self.isLoading.value = false
                 self.error.value = SNGErrorAlertType.domain.rawValue

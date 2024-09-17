@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import WSRUtils
 
 extension WSRApiService {
     func getPosts() async throws -> SNGPostDataModel {
@@ -45,7 +46,7 @@ extension WSRApiService {
             }
         }
         
-        logger.api(request: request, httpResponse: httpResponse, data: data)
+        wsrLogger.api(request: request, httpResponse: httpResponse, data: data)
         
         do {
             let decoder = JSONDecoder()

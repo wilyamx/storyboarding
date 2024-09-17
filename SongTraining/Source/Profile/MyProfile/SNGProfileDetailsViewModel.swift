@@ -6,6 +6,8 @@
 //
 
 import Foundation
+import WSRUtils
+import WSRCommon
 
 final class SNGProfileDetailsViewModel {
     var isLoading: WSRObservableObject<Bool> = WSRObservableObject(false)
@@ -29,7 +31,7 @@ final class SNGProfileDetailsViewModel {
         }
         catch(let error) {
             if let error = error as? WSRApiError {
-                logger.api(message: error.description)
+                wsrLogger.api(message: error.description)
                 
                 if error.description == WSRApiError.badRequest.description {
                     self.isLoading.value = false
@@ -41,7 +43,7 @@ final class SNGProfileDetailsViewModel {
                 }
             }
             else {
-                logger.api(message: "\(error.localizedDescription)")
+                wsrLogger.api(message: "\(error.localizedDescription)")
                 
                 self.isLoading.value = false
                 self.error.value = SNGErrorAlertType.domain.rawValue
