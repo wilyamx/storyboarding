@@ -19,6 +19,15 @@
       }
     },
     {
+      "identity" : "keychainaccess",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/kishikawakatsumi/KeychainAccess.git",
+      "state" : {
+        "revision" : "84e546727d66f1adc5439debad16270d0fdd04e7",
+        "version" : "4.2.2"
+      }
+    },
+    {
       "identity" : "reachability.swift",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/ashleymills/Reachability.swift",
@@ -41,8 +50,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/wilyamx/wsr",
       "state" : {
-        "branch" : "develop",
-        "revision" : "65ec5c4ab3003215c5dbb7e62d0cd070eba70542"
+        "branch" : "master",
+        "revision" : "5d8290611cdff7c0150e3043ed030b29b8073192"
       }
     }
   ],
