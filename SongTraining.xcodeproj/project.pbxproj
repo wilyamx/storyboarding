@@ -100,13 +100,13 @@
 		A2143B002C98215000B18146 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = A2143AFF2C98215000B18146 /* IQKeyboardManagerSwift */; };
 		A2143B022C98215900B18146 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = A2143B012C98215900B18146 /* IQKeyboardManagerSwift */; };
 		A2143B052C983D1900B18146 /* WSRCommon in Frameworks */ = {isa = PBXBuildFile; productRef = A2143B042C983D1900B18146 /* WSRCommon */; };
-		A2143B072C983D1900B18146 /* WSRComponents in Frameworks */ = {isa = PBXBuildFile; productRef = A2143B062C983D1900B18146 /* WSRComponents */; };
 		A2143B092C983E4800B18146 /* WSRUtils in Frameworks */ = {isa = PBXBuildFile; productRef = A2143B082C983E4800B18146 /* WSRUtils */; };
 		A2143B0B2C98463800B18146 /* WSRCommon in Frameworks */ = {isa = PBXBuildFile; productRef = A2143B0A2C98463800B18146 /* WSRCommon */; };
-		A2143B0D2C98463800B18146 /* WSRComponents in Frameworks */ = {isa = PBXBuildFile; productRef = A2143B0C2C98463800B18146 /* WSRComponents */; };
 		A2143B0F2C98463800B18146 /* WSRUtils in Frameworks */ = {isa = PBXBuildFile; productRef = A2143B0E2C98463800B18146 /* WSRUtils */; };
 		A2143B112C98495C00B18146 /* WSRMedia in Frameworks */ = {isa = PBXBuildFile; productRef = A2143B102C98495C00B18146 /* WSRMedia */; };
 		A2143B132C984A4800B18146 /* WSRMedia in Frameworks */ = {isa = PBXBuildFile; productRef = A2143B122C984A4800B18146 /* WSRMedia */; };
+		A2AEC9252CA2ADA600196DB7 /* WSRComponents_UIKit in Frameworks */ = {isa = PBXBuildFile; productRef = A2AEC9242CA2ADA600196DB7 /* WSRComponents_UIKit */; };
+		A2AEC9272CA2ADB400196DB7 /* WSRComponents_UIKit in Frameworks */ = {isa = PBXBuildFile; productRef = A2AEC9262CA2ADB400196DB7 /* WSRComponents_UIKit */; };
 		A2F08B052C98108F00DE5E95 /* SNGProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6071E3572A548CC900D7C4A6 /* SNGProfileModel.swift */; };
 		A2F08B062C98108F00DE5E95 /* WSRNetworkObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60CCF6442A59A732005BFC72 /* WSRNetworkObserver.swift */; };
 		A2F08B072C98108F00DE5E95 /* SNGNewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B4D1F92A569E2F00AC7CB9 /* SNGNewsTableViewCell.swift */; };
@@ -312,8 +312,8 @@
 				A2143AF62C9820F400B18146 /* KeychainSwift in Frameworks */,
 				A2143AFB2C98212200B18146 /* Reachability in Frameworks */,
 				A2143B0B2C98463800B18146 /* WSRCommon in Frameworks */,
+				A2AEC9272CA2ADB400196DB7 /* WSRComponents_UIKit in Frameworks */,
 				A2143B0F2C98463800B18146 /* WSRUtils in Frameworks */,
-				A2143B0D2C98463800B18146 /* WSRComponents in Frameworks */,
 				A2143B132C984A4800B18146 /* WSRMedia in Frameworks */,
 				A2143B002C98215000B18146 /* IQKeyboardManagerSwift in Frameworks */,
 			);
@@ -340,8 +340,8 @@
 				A2143AF82C98210000B18146 /* KeychainSwift in Frameworks */,
 				A2143AFD2C98212D00B18146 /* Reachability in Frameworks */,
 				A2143B052C983D1900B18146 /* WSRCommon in Frameworks */,
+				A2AEC9252CA2ADA600196DB7 /* WSRComponents_UIKit in Frameworks */,
 				A2143B092C983E4800B18146 /* WSRUtils in Frameworks */,
-				A2143B072C983D1900B18146 /* WSRComponents in Frameworks */,
 				A2143B112C98495C00B18146 /* WSRMedia in Frameworks */,
 				A2143B022C98215900B18146 /* IQKeyboardManagerSwift in Frameworks */,
 			);
@@ -709,9 +709,9 @@
 				A2143AFA2C98212200B18146 /* Reachability */,
 				A2143AFF2C98215000B18146 /* IQKeyboardManagerSwift */,
 				A2143B0A2C98463800B18146 /* WSRCommon */,
-				A2143B0C2C98463800B18146 /* WSRComponents */,
 				A2143B0E2C98463800B18146 /* WSRUtils */,
 				A2143B122C984A4800B18146 /* WSRMedia */,
+				A2AEC9262CA2ADB400196DB7 /* WSRComponents_UIKit */,
 			);
 			productName = SongTraining;
 			productReference = 606F72912A4BD89A0011F798 /* SongTraining.app */;
@@ -771,9 +771,9 @@
 				A2143AFC2C98212D00B18146 /* Reachability */,
 				A2143B012C98215900B18146 /* IQKeyboardManagerSwift */,
 				A2143B042C983D1900B18146 /* WSRCommon */,
-				A2143B062C983D1900B18146 /* WSRComponents */,
 				A2143B082C983E4800B18146 /* WSRUtils */,
 				A2143B102C98495C00B18146 /* WSRMedia */,
+				A2AEC9242CA2ADA600196DB7 /* WSRComponents_UIKit */,
 			);
 			productName = SongTraining;
 			productReference = A2F08B662C98108F00DE5E95 /* SongTraining_DEV.app */;
@@ -1533,11 +1533,6 @@
 			package = A2143B032C983D1900B18146 /* XCRemoteSwiftPackageReference "wsr" */;
 			productName = WSRCommon;
 		};
-		A2143B062C983D1900B18146 /* WSRComponents */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = A2143B032C983D1900B18146 /* XCRemoteSwiftPackageReference "wsr" */;
-			productName = WSRComponents;
-		};
 		A2143B082C983E4800B18146 /* WSRUtils */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = A2143B032C983D1900B18146 /* XCRemoteSwiftPackageReference "wsr" */;
@@ -1547,11 +1542,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = A2143B032C983D1900B18146 /* XCRemoteSwiftPackageReference "wsr" */;
 			productName = WSRCommon;
-		};
-		A2143B0C2C98463800B18146 /* WSRComponents */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = A2143B032C983D1900B18146 /* XCRemoteSwiftPackageReference "wsr" */;
-			productName = WSRComponents;
 		};
 		A2143B0E2C98463800B18146 /* WSRUtils */ = {
 			isa = XCSwiftPackageProductDependency;
@@ -1567,6 +1557,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = A2143B032C983D1900B18146 /* XCRemoteSwiftPackageReference "wsr" */;
 			productName = WSRMedia;
+		};
+		A2AEC9242CA2ADA600196DB7 /* WSRComponents_UIKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A2143B032C983D1900B18146 /* XCRemoteSwiftPackageReference "wsr" */;
+			productName = WSRComponents_UIKit;
+		};
+		A2AEC9262CA2ADB400196DB7 /* WSRComponents_UIKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A2143B032C983D1900B18146 /* XCRemoteSwiftPackageReference "wsr" */;
+			productName = WSRComponents_UIKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import WSRComponents
+import WSRComponents_UIKit
 import WSRUtils
 
 class SNGSignInViewController: SNGViewController, WSRStoryboarded {
